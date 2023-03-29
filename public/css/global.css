@@ -56,7 +56,16 @@ body {
   --padding-smi: 0.81rem;
   --padding-49xl: 4.25rem;
 
+  --padding-side: 103px;
+
   /* border radiuses */
   --br-9xs: 4px;
   --br-17xl: 36px;
+
+  /* width */
+  --maxwidth-1200: 1200px;
+
+  /* margin */
+  --breadcrum-top: 50px;
+  --margin-top-footer: 50px;
 }
