@@ -8,6 +8,7 @@
   .h00-17h005 {
     position: relative;
     font-weight: 300;
+    white-space: nowrap;
   }
   .clock-parent3 {
     height: 1.06rem;
@@ -24,7 +25,6 @@
     gap: var(--gap-8xs);
   }
   .frame-parent41 {
-    width: 23.63rem;
     height: 1.38rem;
     flex-shrink: 0;
     gap: var(--gap-lg);
@@ -43,7 +43,7 @@
     align-items: flex-start;
   }
   .menu-item17 {
-    padding: 0 var(--padding-4xs);
+    padding-left: var(--padding-4xs);
     justify-content: center;
   }
   .menu-item-parent3,
@@ -112,6 +112,7 @@
   .frame-parent42 {
     justify-content: flex-start;
     gap: var(--gap-mid);
+    padding: 0.7rem 0;
   }
   .menu-inner4 {
     align-self: stretch;
@@ -127,25 +128,27 @@
   }
   .menu5 {
     align-self: stretch;
-    height: 7.44rem;
     flex-shrink: 0;
     flex-direction: row;
     gap: var(--gap-5xl);
     font-size: var(--font-size-29xl);
   }
   .header-inner5 {
-    height: 9.69rem;
     flex-direction: column;
     max-width: var(--maxwidth-1200);
     margin: 0 auto;
   }
   .header5 {
-    align-self: stretch;
-    position: relative;
+    align-self: stretch;   
+    position: sticky;
+    top: 0;
+    z-index: 23;
     background-color: var(--main-blue);
-    height: 9.69rem;
     flex-shrink: 0;
     font-size: var(--font-size-sm);
     color: var(--color-white);
     padding: 0 var(--padding-side);
+  }
+  .right-menu-item {
+    white-space: nowrap;
   }

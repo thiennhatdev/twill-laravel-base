@@ -19,5 +19,5 @@ return [
                 'component' => 'a17-block-image',
             ],
         ]
-    ]
+    ],
 ];

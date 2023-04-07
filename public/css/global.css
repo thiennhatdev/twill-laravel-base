@@ -18,12 +18,14 @@ body {
 
   /* Colors */
   --color-white: #fff;
-  --main-blue: #0c4577;
-  --red: #eb5757;
-  --main-color: #0ca0f3;
+  --main-blue: #003A6F;
+  --main-blue-2: #336699;
+  --red: #FF5959;
+  --main-color: #6EC5E9;
   --color-black: #000;
   --light-silver-bold: #eff1f2;
   --primary-blue: #01176e;
+  --orange: #FFC56C;  
 
   /* Gaps */
   --gap-xl: 1.25rem;
@@ -39,7 +41,7 @@ body {
   --gap-8xs: 0.31rem;
   --gap-base: 1rem;
   --gap-9xs: 0.25rem;
-  --gap-39xl: 3.63rem;
+  --gap-39xl: 1.4rem;
 
   /* Paddings */
   --padding-83xl: 6.38rem;

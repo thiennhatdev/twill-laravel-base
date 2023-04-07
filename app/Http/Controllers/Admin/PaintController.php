@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use A17\Twill\Http\Controllers\Admin\ModuleController as BaseModuleController;
+use App\Repositories\PaintCategoryRepository;
 
 class PaintController extends BaseModuleController
 {
@@ -14,24 +15,33 @@ class PaintController extends BaseModuleController
 
     protected $indexColumns = [
         // 'thumbnail' => [
-        //     'title' => 'Ảnh',
-        //     'field' => 'thumbnail',
+        //     'thumb' => true, // image column
+        //     'variant' => [
+        //         'role' => 'thumbnail',
+        //         'crop' => 'thumbnail',
+        //     ],
         // ],
         'title' => [
             'title' => 'Tên',
             'field' => 'title',
         ],
-        'type' => [
-            'title' => 'Loại',
-            'field' => 'type',
+        // 'type' => [
+        //     'title' => 'Loại',
+        //     'field' => 'paint_categories_id',
+        // ],
+        'feature' => [
+            'title' => 'Tính năng',
+            'field' => 'feature',
         ],
-        'origin_price' => [
-            'title' => 'Giá gốc',
-            'field' => 'origin_price',
-        ],
-        'sell_price' => [
-            'title' => 'Giá bán',
-            'field' => 'sell_price',
-        ]
     ];
+
+    protected function formData($request)
+    {
+        return [
+            'categoryList' => app(PaintCategoryRepository::class)->allCategorys()
+        ];
+    }
+
+    protected $perPage = 10;
+
 }

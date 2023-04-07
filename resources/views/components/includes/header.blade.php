@@ -12,15 +12,20 @@
           </div>
         </div>
         <div class="menu-item-parent3">
-          <div class="menu-item15"><div class="xem-thm">Liên hệ</div></div>
-          <div class="menu-item15"><div class="xem-thm">Tin tức</div></div>
+          <div class="menu-item15">
+            <div class="xem-thm right-menu-item">
+              <a href="#">Tin tức</a>
+            </div>
+          </div>
           <div class="menu-item17">
-            <div class="xem-thm">Giới thiệu</div>
+            <div class="xem-thm right-menu-item">
+              <a href="#">Giới thiệu</a>
+            </div>
           </div>
         </div>
       </div>
       <div class="menu5">
-        <b class="logo10">LOGO</b>
+        <b class="logo10 logo-header">LOGO</b>
         <div class="menu-inner4">
           <div class="frame-parent42">
             <div class="bo-gi-thi-cng-sn-wrapper3">

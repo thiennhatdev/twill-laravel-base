@@ -7,3 +7,4 @@ Route::module('projects');
 Route::module('abouts');
 Route::module('news');
 Route::module('paints');
+Route::module('paintCategories');

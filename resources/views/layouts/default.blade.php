@@ -25,6 +25,7 @@ function removeWhitespace($buffer)
     <link href="{{ asset('/css/footer.css') }}" rel="stylesheet" />
     <link href="{{ asset('/css/global.css') }}" rel="stylesheet" />
     <link href="{{ asset('/css/common.css') }}" rel="stylesheet" />
+    <link href="{{ asset('/css/responsive.css') }}" rel="stylesheet" />
     @yield('head')
 </head>
 
@@ -36,6 +37,48 @@ function removeWhitespace($buffer)
 
     @include('components.includes.footer')
     
+    {{-- <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div> --}}
+
+    {{-- phone call button --}}
+    <form action="tel:917387084384">
+        <button type="submit" class='btn-phone-call'>
+            <img alt='phone-call' src="{{ asset('images/icons/ic-phone-white.svg') }}" />
+        </button>
+    </form>
+
+    {{-- <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "1791899111092295");
+        chatbox.setAttribute("attribution", "biz_inbox");
+      </script>
+  
+      <!-- Your SDK code -->
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v16.0'
+          });
+        };
+  
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+      </script> --}}
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v16.0" nonce="ddMh2paa"></script>
+
+    @yield('script')
 </body>
 
 </html>

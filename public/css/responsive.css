@@ -1,0 +1,257 @@
+@media all and (max-width: 1200px) {  
+    :root { 
+        --padding-side: 70px;
+    } 
+}
+
+@media all and (max-width: 992px) {  
+    .menu5 {
+        align-items: flex-start;
+    }
+    .frame-parent43 {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0.4rem;
+    }
+    .homepage .homepage-inner {
+        margin-top: 2rem;
+    }
+    .banner .banner-content {
+        width: 50%;
+        left: 4.56rem;
+    }
+    .i-l-phn-container {
+        font-size: 2rem;
+    }
+    .banner-parent .frame-wrapper7 {
+        padding: 3.44rem 0;
+    }
+    .frame-parent67 {
+        gap: 2rem;
+    }
+    .fanpage-parent3 {
+        transform: translateX(-50%);
+        margin-left: 50%;
+    }
+    .frame-parent67>div,
+    .frame-parent69 {
+        align-items: center;
+    }
+}
+@media all and (max-width: 768px) {  
+    :root { 
+        --padding-side: 40px;
+        --font-size-xl: 1rem;
+        --font-size-5xl: 1.25rem;
+        --margin-top-footer: 30px;
+    } 
+    .bo-gi-thi-cng-sn-wrapper3 {
+        padding: 0.2rem 1rem;
+    }
+    .slider .banner {
+        height: 19.31rem;
+    }
+    .banner-content .i-l-phn-container {
+        font-size: 1.5rem;
+    }
+    .banner-parent .wrap-search-product {
+        justify-content: center;
+    }
+    .banner-parent .search-product {
+        height: 35px;
+        width: 250px;
+    }
+    .banner-parent .wrap-search-product button {
+        height: 35px;
+    }
+    .banner-parent .group-parent5 {
+        margin-top: 30px;
+    }
+    .group-parent5 .rectangle-parent11, .sn-alex-ngoi4 {
+        width: 9.44rem;
+        height: 8.69rem;
+    }
+    .group-parent5 .instance-container {
+        height: 19.88rem;
+    }
+    .group-parent5 .wrap-navigate-slide>div {
+        width: 2rem;
+        height: 2rem;
+    }
+    .group-parent5 .frame4 {
+        padding: 0.2rem 0.1rem;
+    }
+    .frame-parent60 .cc-loi-sn-jotun-wrapper {
+        font-size: 1.5rem;
+    }
+    .real-image-list .image-list {
+        gap: 4.19rem;
+    }
+    .frame-parent61 .frame-parent62 {
+        height: 23.44rem;
+    }
+    .image-list .frame-parent61 {
+        height: 28.88rem;
+    }
+    .polygon-parent .price-table-content h3 {
+        font-size: 22px;
+        line-height: 27px;
+        padding: 0.5rem 2rem;
+    }
+    .homepage .price-table {
+        gap: 2.75rem;
+        margin: 3rem 0 4rem;
+    }
+    .polygon-parent .price-table-content {
+        margin: 1rem 0;
+    }
+    .frame-wrapper9 .group-parent9 {
+        gap: 1.88rem;
+    }
+    .frame-parent67>div {
+        width: 46%;
+        min-width: 200px;
+    }
+}
+@media all and (max-width: 576px) {  
+    :root { 
+        --padding-side: 20px;
+        --font-size-5xl: 1rem;
+    } 
+    .top-menu5 {
+        justify-content: flex-end;
+    }
+    .frame-parent41 {
+        display: none;
+    }
+    .frame-parent43 {
+        display: none;
+    }
+    .slider .banner {
+        height: 16.31rem;
+    }
+    .cung-cp-sn {
+        font-size: 0.8rem;
+    }
+    .slider .banner-arrow {
+        padding: 0 1rem;
+    }
+    .banner .banner-content {
+        left: 11%;
+        padding: 1rem 1.5rem;
+        width: 64%;
+    }
+    .homepage .homepage-inner {
+        margin-top: 20px;
+    }
+    .bn-ang-cn {
+        font-size: 2rem;
+    }
+    .bn-ang-cn-sn-nh-parent .lin-h-ngay-container {
+        height: 2rem;
+        padding: 0.5rem 1.5rem;
+    }
+    .cc-loi-sn-jotun-wrapper .cc-loi-sn-1 {
+        font-size: 1.2rem;
+    }
+    .image-list .instance-parent4 {
+        margin-top: -2rem;
+    }
+    .instance-parent4 .mt-s-hnh {
+        font-size: 0.8rem;
+    }
+    .frame-parent61 .frame-parent62 {
+        height: 14.44rem;
+    }
+    .image-list .frame-parent61 {
+        height: 17.88rem;
+    }
+    .polygon-parent .price-table-content h3 {
+        font-size: 19px;
+        line-height: 22px;
+        padding: 0.5rem 1rem;
+    }
+    .frame-parent60 .cc-loi-sn-jotun-wrapper {
+        font-size: 1rem;
+    }
+    .frame-parent67 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .frame-parent67>div {
+        width: 100%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        gap: 0.5rem;
+    }
+    .frame-parent69 {
+        gap: 0.2rem;
+    }
+}
+
+@media all and (max-width: 440px) { 
+    :root { 
+        --padding-side: 14px;
+    } 
+    .menu5 {
+        align-items: center;
+    }
+    .logo-header {
+        font-size: 2rem;
+    }
+    .banner-arrow .banner-arrow-child {
+        height: 1.51rem;
+    }
+    .banner .banner-content {
+        width: 77%;
+    }
+    .slider .banner-arrow {
+        padding: 0 0.5rem;
+    }
+    .paint-category-title {
+        padding: 0 0.5rem;
+    }
+    .bn-ang-cn-sn-nh-parent .bn-ang-cn {
+        font-size: 1.5rem;
+    }
+    .frame-wrapper7 .rectangle-parent30 {
+        height: 15.13rem;
+    }
+    .rectangle-parent10-inner .paint-category-title {
+        padding: 0 0.3rem;
+    }
+    .group-parent5 .vector-parent {
+        height: 3rem;
+    }
+    .vector-parent .rectangle-parent10 {
+        width: 100%;
+    }
+    .vector-parent .category-right-head {
+        width: 0;
+    }
+    .image-list .instance-parent4 {
+        padding: 0.5rem 1rem;
+    }
+    .group-parent5 .instance-container {
+        height: 16.88rem;
+    }
+    .carousel .carousel-content {
+        height: 100%;
+    }
+    .wrap-navigate-slide {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        justify-content: space-between !important;
+        padding: 0 0.5rem;
+        z-index: 5;
+    }
+    .website-c-thit-k-bi-cty-wrapper3 {
+        font-size: 0.8rem;
+        height: 2rem;
+    }
+    .btn-phone-call {
+        width: 3rem;
+        height: 3rem;
+    }
+}

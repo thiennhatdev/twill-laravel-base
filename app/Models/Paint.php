@@ -12,13 +12,17 @@ use A17\Twill\Models\Behaviors\HasPosition;
 use A17\Twill\Models\Behaviors\Sortable;
 use A17\Twill\Models\Model;
 
-class Paint extends Model implements Sortable
+use App\Models\PaintCategory;
+use App\Models\PaintsItem;
+
+class Paint extends Model
 {
     use HasBlocks, HasSlug, HasMedias, HasFiles, HasRevisions, HasPosition;
 
     protected $fillable = [
         'published',
         'title',
+        'paint_categories_id',
         'type',
         'feature',
         'specifications',
@@ -37,13 +41,13 @@ class Paint extends Model implements Sortable
             'default' => [
                 [
                     'name' => 'default',
-                    'ratio' => 16 / 9,
+                    'ratio' => 0,
                 ],
             ],
             'mobile' => [
                 [
                     'name' => 'mobile',
-                    'ratio' => 1,
+                    'ratio' => 0,
                 ],
             ],
             'flexible' => [
@@ -62,4 +66,9 @@ class Paint extends Model implements Sortable
             ],
         ],
     ];
+
+    public function paints()
+    {
+        return $this->hasMany(PaintsItem::class)->orderBy('position');
+    }
 }

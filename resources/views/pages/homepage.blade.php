@@ -12,450 +12,320 @@ Trang chủ
   <div class="homepage">
     <div class="homepage-inner">
       <div class="banner-parent">
-        <div class="banner">
-          <div class="banner-thumbnail">
-            <img
-              class="banner-thumbnail-child"
-              alt=""
-              src="{{ asset('images/paint-banner.png') }}"
-            />
-          </div>
-          <div class="banner-content">
-            <div class="i-l-phn-container">
-              <p class="i-l-phn">ĐẠI LÝ PHÂN PHỐI</p>
-              <p class="i-l-phn">SƠN JOTUN</p>
+        <div class='slider'>
+          <div class="banner slide-inner">
+            <div>
+              <div class="banner-thumbnail">
+                <img
+                  class="banner-thumbnail-child"
+                  alt=""
+                  src="{{ asset('images/paint-banner.png') }}"
+                />
+              </div>
+              <div class="banner-content">
+                <div class="i-l-phn-container">
+                  <p class="i-l-phn">ĐẠI LÝ PHÂN PHỐI</p>
+                  <p class="i-l-phn">SƠN JOTUN</p>
+                </div>
+                <div class="cung-cp-sn">
+                  Cung cấp sơn chính hãng uy tín lớn nhất tại miền trung Cung cấp
+                  sơn chính hãng uy tín lớn nhất tại miền trung
+                </div>
+                <div class="banner-content-inner">
+                  <div class="lin-h-ngay-wrapper">
+                    <div class="lin-h-ngay">LIÊN HỆ NGAY</div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="cung-cp-sn">
-              Cung cấp sơn chính hãng uy tín lớn nhất tại miền trung Cung cấp
-              sơn chính hãng uy tín lớn nhất tại miền trung
+            <div>
+              <div class="banner-thumbnail">
+                <img
+                  class="banner-thumbnail-child"
+                  alt=""
+                  src="{{ asset('images/paint-banner.png') }}"
+                />
+              </div>
+              <div class="banner-content">
+                <div class="i-l-phn-container">
+                  <p class="i-l-phn">ĐẠI LÝ PHÂN PHỐI</p>
+                  <p class="i-l-phn">SƠN JOTUN</p>
+                </div>
+                <div class="cung-cp-sn">
+                  Cung cấp sơn chính hãng uy tín lớn nhất tại miền trung Cung cấp
+                  sơn chính hãng uy tín lớn nhất tại miền trung
+                </div>
+                <div class="banner-content-inner">
+                  <div class="lin-h-ngay-wrapper">
+                    <div class="lin-h-ngay">LIÊN HỆ NGAY</div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="banner-content-inner">
-              <div class="lin-h-ngay-wrapper">
-                <div class="lin-h-ngay">LIÊN HỆ NGAY</div>
+            <div>
+              <div class="banner-thumbnail">
+                <img
+                  class="banner-thumbnail-child"
+                  alt=""
+                  src="{{ asset('images/paint-banner.png') }}"
+                />
+              </div>
+              <div class="banner-content">
+                <div class="i-l-phn-container">
+                  <p class="i-l-phn">ĐẠI LÝ PHÂN PHỐI</p>
+                  <p class="i-l-phn">SƠN JOTUN</p>
+                </div>
+                <div class="cung-cp-sn">
+                  Cung cấp sơn chính hãng uy tín lớn nhất tại miền trung Cung cấp
+                  sơn chính hãng uy tín lớn nhất tại miền trung
+                </div>
+                <div class="banner-content-inner">
+                  <div class="lin-h-ngay-wrapper">
+                    <div class="lin-h-ngay">LIÊN HỆ NGAY</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <div class="banner-arrow">
             <img
-              class="banner-arrow-child"
-              alt=""
+              id="prev"
+              class="banner-arrow-child icon-arrow_back"
+              alt="icon-arrow-left"
               src="{{ asset('images/icons/ic-arrow-left.svg') }}"
             /><img
-              class="banner-arrow-child"
-              alt=""
+              id="next"
+              class="banner-arrow-child icon-arrow_forward"
+              alt="icon-arrow-right"
               src="{{ asset('images/icons/ic-arrow-right.svg') }}"
             />
           </div>
         </div>
-        <div class="group-parent5">
-          <div class="vector-parent">
-            <div class="group-child6"></div>
-            <div class="rectangle-parent10">
-              <div class="sn-ngoi-tht">Sơn ngoại thất đẹp nhất</div>
-            </div>
+
+        <div class='wrap-search-product'>
+          <div class='search-product'>
+            <input type='text' placeholder="Tìm kiếm sản phẩm sơn" />
+            <img alt='icon-search' src="{{ asset('images/icons/ic-search.svg') }}" />
           </div>
-          <div class="instance-container">
-            <div class="frame-parent44">
-              <div class="rectangle-parent11">
-                <img
-                  class="frame-child12"
-                  alt=""
-                  src="./public/rectangle-74@2x.png"
-                />
-                <div class="ellipse-parent2">
-                  <img
-                    class="frame-child13"
-                    alt=""
-                    src="./public/ellipse-24.svg"
-                  />
-                  <div class="kg4">45 kg</div>
-                </div>
-              </div>
-              <div class="sn-alex-ngoi4">
-                Sơn Alex ngoại thất chống nóng hiệu quả
-              </div>
-              <div class="frame4">
-                <div class="logo10">1.000.000 vnđ</div>
-              </div>
-            </div>
-            <div class="frame-parent45">
-              <div class="rectangle-parent11">
-                <img
-                  class="frame-child12"
-                  alt=""
-                  src="./public/rectangle-74@2x.png"
-                />
-                <div class="ellipse-parent2">
-                  <img
-                    class="frame-child13"
-                    alt=""
-                    src="./public/ellipse-24.svg"
-                  />
-                  <div class="kg4">45 kg</div>
-                </div>
-              </div>
-              <div class="sn-alex-ngoi4">
-                Sơn Alex ngoại thất chống nóng hiệu quả
-              </div>
-              <div class="frame4">
-                <div class="logo10">1.000.000 vnđ</div>
-              </div>
-            </div>
-            <div class="frame-parent46">
-              <div class="rectangle-parent11">
-                <img
-                  class="frame-child12"
-                  alt=""
-                  src="./public/rectangle-74@2x.png"
-                />
-                <div class="ellipse-parent2">
-                  <img
-                    class="frame-child13"
-                    alt=""
-                    src="./public/ellipse-24.svg"
-                  />
-                  <div class="kg4">45 kg</div>
-                </div>
-              </div>
-              <div class="sn-alex-ngoi4">
-                Sơn Alex ngoại thất chống nóng hiệu quả
-              </div>
-              <div class="frame4">
-                <div class="logo10">1.000.000 vnđ</div>
-              </div>
-            </div>
-            <div class="frame-parent47">
-              <div class="rectangle-parent11">
-                <img
-                  class="frame-child12"
-                  alt=""
-                  src="./public/rectangle-74@2x.png"
-                />
-                <div class="ellipse-parent2">
-                  <img
-                    class="frame-child13"
-                    alt=""
-                    src="./public/ellipse-24.svg"
-                  />
-                  <div class="kg4">45 kg</div>
-                </div>
-              </div>
-              <div class="sn-alex-ngoi4">
-                Sơn Alex ngoại thất chống nóng hiệu quả
-              </div>
-              <div class="frame4">
-                <div class="logo10">1.000.000 vnđ</div>
-              </div>
-            </div>
-          </div>
+          <button>Tìm</button>
         </div>
-        <div class="group-parent5">
-          <div class="vector-parent">
-            <img class="group-child6" alt="" src="./public/vector-22.svg" />
-            <div class="rectangle-parent10">
-              <div class="group-child7"></div>
-              <div class="sn-ngoi-tht">Sơn ngoại thất</div>
+
+        @foreach($paints as $key => $paint)
+          {{-- group slider --}}
+          <div class="group-parent5">
+            <div class="vector-parent">
+              <div class="rectangle-parent10">
+                <div class='rectangle-parent10-inner'>
+                  <div class='paint-category-title'>
+                    <img alt='star' src="{{ asset('images/icons/ic-star-white.svg') }}" />
+                    <div class="sn-ngoi-tht">{{ $paint[0]->categoriesName }}</div>
+                  </div>
+                </div>
+              </div>
+              <div class="category-right-head"> </div>
+            </div>
+            <div class="instance-container">
+              <div class='carousel parent-carasel-{{ $key }}'>
+                <div class=" carousel-content">
+                  @foreach($paint as $paintProduct)
+                    <div class="product-list__item slide">
+                      <div class="product frame-parent44 ">
+                        <div class="rectangle-parent11">
+                          <img
+                            class="frame-child12"
+                            alt="{{ $paintProduct->title }}"
+                            src="{{ $paintProduct->image('thumbnail', 'default') }}"
+                          />
+                        </div>
+                        <a href="#" class="sn-alex-ngoi4" title="{{ $paintProduct->title }}">
+                          {{ $paintProduct->title }}
+                        </a>
+                        <div class='product-specifications-color'>
+                          <div class='product-specifications'>{{ $paintProduct->specifications }}</div>
+                          <div class='product-color'>{{ $paintProduct->color }}</div>
+                        </div>
+                        <div class="frame4">
+                          <div class="logo10">{{ number_format($paintProduct->sell_price, 0, '.', '.') }} vnđ</div>
+                        </div>
+                      </div>
+                    </div>
+                  @endforeach
+                  {{-- <div class="product-list__item slide">
+                    <div class="product frame-parent44 ">
+                      <div class="rectangle-parent11">
+                        <img
+                          class="frame-child12"
+                          alt=""
+                          src="./public/rectangle-74@2x.png"
+                        />
+                        <div class="ellipse-parent2">
+                          <img
+                            class="frame-child13"
+                            alt=""
+                            src="./public/ellipse-24.svg"
+                          />
+                          <div class="kg4">45 kg</div>
+                        </div>
+                      </div>
+                      <div class="sn-alex-ngoi4">
+                        Sơn Alex ngoại thất chống nóng hiệu quả
+                      </div>
+                      <div class="frame4">
+                        <div class="logo10">1.000.000 vnđ</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class=" product-list__item slide">
+                    <div class="product frame-parent44">
+                      <div class="rectangle-parent11">
+                        <img
+                          class="frame-child12"
+                          alt=""
+                          src="./public/rectangle-74@2x.png"
+                        />
+                        <div class="ellipse-parent2">
+                          <img
+                            class="frame-child13"
+                            alt=""
+                            src="./public/ellipse-24.svg"
+                          />
+                          <div class="kg4">45 kg</div>
+                        </div>
+                      </div>
+                      <div class="sn-alex-ngoi4">
+                        Sơn Alex ngoại thất chống nóng hiệu quả
+                      </div>
+                      <div class="frame4">
+                        <div class="logo10">1.000.000 vnđ</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class=" product-list__item slide">
+                    <div class="product frame-parent44">
+                      <div class="rectangle-parent11">
+                        <img
+                          class="frame-child12"
+                          alt=""
+                          src="./public/rectangle-74@2x.png"
+                        />
+                        <div class="ellipse-parent2">
+                          <img
+                            class="frame-child13"
+                            alt=""
+                            src="./public/ellipse-24.svg"
+                          />
+                          <div class="kg4">45 kg</div>
+                        </div>
+                      </div>
+                      <div class="sn-alex-ngoi4">
+                        Sơn Alex ngoại thất chống nóng hiệu quả
+                      </div>
+                      <div class="frame4">
+                        <div class="logo10">1.000.000 vnđ</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-list__item slide">
+                    <div class="product frame-parent44 ">
+                      <div class="rectangle-parent11">
+                        <img
+                          class="frame-child12"
+                          alt=""
+                          src="./public/rectangle-74@2x.png"
+                        />
+                        <div class="ellipse-parent2">
+                          <img
+                            class="frame-child13"
+                            alt=""
+                            src="./public/ellipse-24.svg"
+                          />
+                          <div class="kg4">45 kg</div>
+                        </div>
+                      </div>
+                      <div class="sn-alex-ngoi4">
+                        Sơn Alex ngoại thất chống nóng hiệu quả
+                      </div>
+                      <div class="frame4">
+                        <div class="logo10">1.000.000 vnđ</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class=" product-list__item slide">
+                    <div class="product frame-parent44">
+                      <div class="rectangle-parent11">
+                        <img
+                          class="frame-child12"
+                          alt=""
+                          src="./public/rectangle-74@2x.png"
+                        />
+                        <div class="ellipse-parent2">
+                          <img
+                            class="frame-child13"
+                            alt=""
+                            src="./public/ellipse-24.svg"
+                          />
+                          <div class="kg4">45 kg</div>
+                        </div>
+                      </div>
+                      <div class="sn-alex-ngoi4">
+                        Sơn Alex ngoại thất chống nóng hiệu quả
+                      </div>
+                      <div class="frame4">
+                        <div class="logo10">1.000.000 vnđ</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class=" product-list__item slide">
+                    <div class="product frame-parent44">
+                      <div class="rectangle-parent11">
+                        <img
+                          class="frame-child12"
+                          alt=""
+                          src="./public/rectangle-74@2x.png"
+                        />
+                        <div class="ellipse-parent2">
+                          <img
+                            class="frame-child13"
+                            alt=""
+                            src="./public/ellipse-24.svg"
+                          />
+                          <div class="kg4">45 kg</div>
+                        </div>
+                      </div>
+                      <div class="sn-alex-ngoi4">
+                        Sơn Alex ngoại thất chống nóng hiệu quả
+                      </div>
+                      <div class="frame4">
+                        <div class="logo10">1.000.000 vnđ</div>
+                      </div>
+                    </div>
+                  </div> --}}
+                </div>
+              
+                <div class='wrap-navigate-slide'>
+                  <div>
+                    <img class="nav-left" alt='icon-arrow-left' src="{{ asset('images/icons/ic-arrow-left.svg') }}" />
+                  </div>
+                  <div>
+                    <img class="nav-right" alt='icon-arrow-right' src="{{ asset('images/icons/ic-arrow-right.svg') }}" />
+                  </div>
+                </div>
+                
+              </div>
             </div>
           </div>
-          <div class="instance-container">
-            <div class="frame-parent44">
-              <div class="rectangle-parent11">
-                <img
-                  class="frame-child12"
-                  alt=""
-                  src="./public/rectangle-74@2x.png"
-                />
-                <div class="ellipse-parent2">
-                  <img
-                    class="frame-child13"
-                    alt=""
-                    src="./public/ellipse-24.svg"
-                  />
-                  <div class="kg4">45 kg</div>
-                </div>
-              </div>
-              <div class="sn-alex-ngoi4">
-                Sơn Alex ngoại thất chống nóng hiệu quả
-              </div>
-              <div class="frame4">
-                <div class="logo10">1.000.000 vnđ</div>
-              </div>
-            </div>
-            <div class="frame-parent45">
-              <div class="rectangle-parent11">
-                <img
-                  class="frame-child12"
-                  alt=""
-                  src="./public/rectangle-74@2x.png"
-                />
-                <div class="ellipse-parent2">
-                  <img
-                    class="frame-child13"
-                    alt=""
-                    src="./public/ellipse-24.svg"
-                  />
-                  <div class="kg4">45 kg</div>
-                </div>
-              </div>
-              <div class="sn-alex-ngoi4">
-                Sơn Alex ngoại thất chống nóng hiệu quả
-              </div>
-              <div class="frame4">
-                <div class="logo10">1.000.000 vnđ</div>
-              </div>
-            </div>
-            <div class="frame-parent46">
-              <div class="rectangle-parent11">
-                <img
-                  class="frame-child12"
-                  alt=""
-                  src="./public/rectangle-74@2x.png"
-                />
-                <div class="ellipse-parent2">
-                  <img
-                    class="frame-child13"
-                    alt=""
-                    src="./public/ellipse-24.svg"
-                  />
-                  <div class="kg4">45 kg</div>
-                </div>
-              </div>
-              <div class="sn-alex-ngoi4">
-                Sơn Alex ngoại thất chống nóng hiệu quả
-              </div>
-              <div class="frame4">
-                <div class="logo10">1.000.000 vnđ</div>
-              </div>
-            </div>
-            <div class="frame-parent47">
-              <div class="rectangle-parent11">
-                <img
-                  class="frame-child12"
-                  alt=""
-                  src="./public/rectangle-74@2x.png"
-                />
-                <div class="ellipse-parent2">
-                  <img
-                    class="frame-child13"
-                    alt=""
-                    src="./public/ellipse-24.svg"
-                  />
-                  <div class="kg4">45 kg</div>
-                </div>
-              </div>
-              <div class="sn-alex-ngoi4">
-                Sơn Alex ngoại thất chống nóng hiệu quả
-              </div>
-              <div class="frame4">
-                <div class="logo10">1.000.000 vnđ</div>
-              </div>
-            </div>
+          {{-- group slider --}}
+        @endforeach
+       
+        <div class='paint-appendix'>
+          <div>
+            {{-- <img alt='star' src="{{ asset('images/icons/ic-star.svg') }}" /> --}}
+            <p>* Bảng giá sơn đã bao gồm 10% thuế VAT & áp dụng cho sơn trắng.</p>
           </div>
-        </div>
-        <div class="group-parent5">
-          <div class="vector-parent">
-            <img class="group-child6" alt="" src="./public/vector-22.svg" />
-            <div class="rectangle-parent10">
-              <div class="group-child7"></div>
-              <div class="sn-ngoi-tht">Sơn ngoại thất</div>
-            </div>
-          </div>
-          <div class="instance-container">
-            <div class="frame-parent44">
-              <div class="rectangle-parent11">
-                <img
-                  class="frame-child12"
-                  alt=""
-                  src="./public/rectangle-74@2x.png"
-                />
-                <div class="ellipse-parent2">
-                  <img
-                    class="frame-child13"
-                    alt=""
-                    src="./public/ellipse-24.svg"
-                  />
-                  <div class="kg4">45 kg</div>
-                </div>
-              </div>
-              <div class="sn-alex-ngoi4">
-                Sơn Alex ngoại thất chống nóng hiệu quả
-              </div>
-              <div class="frame4">
-                <div class="logo10">1.000.000 vnđ</div>
-              </div>
-            </div>
-            <div class="frame-parent45">
-              <div class="rectangle-parent11">
-                <img
-                  class="frame-child12"
-                  alt=""
-                  src="./public/rectangle-74@2x.png"
-                />
-                <div class="ellipse-parent2">
-                  <img
-                    class="frame-child13"
-                    alt=""
-                    src="./public/ellipse-24.svg"
-                  />
-                  <div class="kg4">45 kg</div>
-                </div>
-              </div>
-              <div class="sn-alex-ngoi4">
-                Sơn Alex ngoại thất chống nóng hiệu quả
-              </div>
-              <div class="frame4">
-                <div class="logo10">1.000.000 vnđ</div>
-              </div>
-            </div>
-            <div class="frame-parent46">
-              <div class="rectangle-parent11">
-                <img
-                  class="frame-child12"
-                  alt=""
-                  src="./public/rectangle-74@2x.png"
-                />
-                <div class="ellipse-parent2">
-                  <img
-                    class="frame-child13"
-                    alt=""
-                    src="./public/ellipse-24.svg"
-                  />
-                  <div class="kg4">45 kg</div>
-                </div>
-              </div>
-              <div class="sn-alex-ngoi4">
-                Sơn Alex ngoại thất chống nóng hiệu quả
-              </div>
-              <div class="frame4">
-                <div class="logo10">1.000.000 vnđ</div>
-              </div>
-            </div>
-            <div class="frame-parent47">
-              <div class="rectangle-parent11">
-                <img
-                  class="frame-child12"
-                  alt=""
-                  src="./public/rectangle-74@2x.png"
-                />
-                <div class="ellipse-parent2">
-                  <img
-                    class="frame-child13"
-                    alt=""
-                    src="./public/ellipse-24.svg"
-                  />
-                  <div class="kg4">45 kg</div>
-                </div>
-              </div>
-              <div class="sn-alex-ngoi4">
-                Sơn Alex ngoại thất chống nóng hiệu quả
-              </div>
-              <div class="frame4">
-                <div class="logo10">1.000.000 vnđ</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="group-parent5">
-          <div class="vector-parent">
-            <img class="group-child6" alt="" src="./public/vector-22.svg" />
-            <div class="rectangle-parent10">
-              <div class="group-child7"></div>
-              <div class="sn-ngoi-tht">Sơn ngoại thất</div>
-            </div>
-          </div>
-          <div class="instance-container">
-            <div class="frame-parent44">
-              <div class="rectangle-parent11">
-                <img
-                  class="frame-child12"
-                  alt=""
-                  src="./public/rectangle-74@2x.png"
-                />
-                <div class="ellipse-parent2">
-                  <img
-                    class="frame-child13"
-                    alt=""
-                    src="./public/ellipse-24.svg"
-                  />
-                  <div class="kg4">45 kg</div>
-                </div>
-              </div>
-              <div class="sn-alex-ngoi4">
-                Sơn Alex ngoại thất chống nóng hiệu quả
-              </div>
-              <div class="frame4">
-                <div class="logo10">1.000.000 vnđ</div>
-              </div>
-            </div>
-            <div class="frame-parent45">
-              <div class="rectangle-parent11">
-                <img
-                  class="frame-child12"
-                  alt=""
-                  src="./public/rectangle-74@2x.png"
-                />
-                <div class="ellipse-parent2">
-                  <img
-                    class="frame-child13"
-                    alt=""
-                    src="./public/ellipse-24.svg"
-                  />
-                  <div class="kg4">45 kg</div>
-                </div>
-              </div>
-              <div class="sn-alex-ngoi4">
-                Sơn Alex ngoại thất chống nóng hiệu quả
-              </div>
-              <div class="frame4">
-                <div class="logo10">1.000.000 vnđ</div>
-              </div>
-            </div>
-            <div class="frame-parent46">
-              <div class="rectangle-parent11">
-                <img
-                  class="frame-child12"
-                  alt=""
-                  src="./public/rectangle-74@2x.png"
-                />
-                <div class="ellipse-parent2">
-                  <img
-                    class="frame-child13"
-                    alt=""
-                    src="./public/ellipse-24.svg"
-                  />
-                  <div class="kg4">45 kg</div>
-                </div>
-              </div>
-              <div class="sn-alex-ngoi4">
-                Sơn Alex ngoại thất chống nóng hiệu quả
-              </div>
-              <div class="frame4">
-                <div class="logo10">1.000.000 vnđ</div>
-              </div>
-            </div>
-            <div class="frame-parent47">
-              <div class="rectangle-parent11">
-                <img
-                  class="frame-child12"
-                  alt=""
-                  src="./public/rectangle-74@2x.png"
-                />
-                <div class="ellipse-parent2">
-                  <img
-                    class="frame-child13"
-                    alt=""
-                    src="./public/ellipse-24.svg"
-                  />
-                  <div class="kg4">45 kg</div>
-                </div>
-              </div>
-              <div class="sn-alex-ngoi4">
-                Sơn Alex ngoại thất chống nóng hiệu quả
-              </div>
-              <div class="frame4">
-                <div class="logo10">1.000.000 vnđ</div>
-              </div>
-            </div>
+          
+          <div>
+            {{-- <img alt='star' src="{{ asset('images/icons/ic-star.svg') }}" /> --}}
+            <p>* Sơn pha màu sẽ được tính theo giá thực tế dựa trên máy pha màu.</p>
           </div>
         </div>
         <div class="frame-wrapper7">
@@ -487,12 +357,8 @@ Trang chủ
           <div class="instance-parent4">
             <div class="frame-parent60">
               <div class="cc-loi-sn-jotun-wrapper">
-                <div class="cc-loi-sn">Hình ảnh thi công thực tế</div>
+                <div class="cc-loi-sn-1">Hình ảnh thi công thực tế</div>
               </div>
-              <div class="instance-item"></div>
-              <div class="instance-inner"></div>
-              <div class="instance-child1"></div>
-              <div class="instance-child2"></div>
             </div>
             <div class="mt-s-hnh">
               Một số hình ảnh công trình tiêu biểu đã thi công
@@ -503,30 +369,30 @@ Trang chủ
               <div class="rectangle-parent31">
                 <img
                   class="frame-child46"
-                  alt=""
-                  src="./public/rectangle-18@2x.png"
+                  alt="thi-cong-son-tai-da-nang"
+                  src="{{ asset('images/thi-cong-son-tai-da-nang-1.jpg') }}"
                 />
                 <div class="frame-parent63">
                   <div class="rectangle-parent32">
                     <img
                       class="frame-child47"
-                      alt=""
-                      src="./public/rectangle-20@2x.png"
+                      alt="thi-cong-son-tai-da-nang"
+                      src="{{ asset('images/thi-cong-son-tai-da-nang-2.jpg') }}"
                     /><img
                       class="frame-child47"
-                      alt=""
-                      src="./public/rectangle-21@2x.png"
+                      alt="thi-cong-son-tai-da-nang"
+                      src="{{ asset('images/thi-cong-son-tai-da-nang-3.jpg') }}"
                     />
                   </div>
                   <div class="rectangle-parent32">
                     <img
                       class="frame-child46"
-                      alt=""
-                      src="./public/rectangle-201@2x.png"
+                      alt="thi-cong-son-tai-da-nang"
+                      src="{{ asset('images/thi-cong-son-tai-da-nang-4.jpg') }}"
                     /><img
                       class="frame-child46"
-                      alt=""
-                      src="./public/rectangle-211@2x.png"
+                      alt="thi-cong-son-tai-da-nang"
+                      src="{{ asset('images/thi-cong-son-tai-da-nang-5.jpg') }}"
                     />
                   </div>
                 </div>
@@ -535,23 +401,23 @@ Trang chủ
                 <div class="rectangle-parent34">
                   <img
                     class="frame-child47"
-                    alt=""
-                    src="./public/rectangle-202@2x.png"
+                    alt="thi-cong-son-tai-da-nang"
+                    src="{{ asset('images/thi-cong-son-tai-da-nang-6.jpg') }}"
                   /><img
                     class="frame-child47"
-                    alt=""
-                    src="./public/rectangle-212@2x.png"
+                    alt="thi-cong-son-tai-da-nang"
+                    src="{{ asset('images/thi-cong-son-tai-da-nang-1.jpg') }}"
                   />
                 </div>
                 <div class="rectangle-parent34">
                   <img
                     class="frame-child47"
-                    alt=""
-                    src="./public/rectangle-203@2x.png"
+                    alt="thi-cong-son-tai-da-nang"
+                    src="{{ asset('images/thi-cong-son-tai-da-nang-2.jpg') }}"
                   /><img
                     class="frame-child47"
-                    alt=""
-                    src="./public/rectangle-212@2x.png"
+                    alt="thi-cong-son-tai-da-nang"
+                    src="{{ asset('images/thi-cong-son-tai-da-nang-3.jpg') }}"
                   />
                 </div>
               </div>
@@ -568,33 +434,45 @@ Trang chủ
         </div>
       </div>
       <div class="polygon-parent">
+        <div class='price-table-content'>
+          <h3>Với kinh nghiệm 10 năm trong nghề</h3>
+          <p>Sứ mệnh của chúng tôi là đem đến sự hài lòng tuyệt đối cho khách hàng</p>
+        </div>
         <div class="frame-wrapper8">
-          <img class="polygon-icon" alt="" src="{{ asset('images/icons/ic-polygon-table.svg') }}" />
           <div class="frame-wrapper9">
             <div class="group-parent9">
-              <div class="bng-bo-gi-thi-cng-sn-v-t-parent">
-                <div class="bng-bo-gi">
-                  Bảng báo giá thi công sơn và trần thạch cao
-                </div>
-                <div class="frame-parent60">
-                  <div class="cc-loi-sn-jotun-wrapper">
-                    <div class="cc-loi-sn">Bảng giá thi công sơn</div>
+              <div class="baogia1-2-parent">
+                <div class="bng-bo-gi-thi-cng-sn-v-t-parent">
+                  <div class="frame-parent60">
+                    <div class="cc-loi-sn-jotun-wrapper">
+                      <div class="cc-loi-sn">Bảng giá thi công thạch cao</div>
+                    </div>
+                    
                   </div>
-                  <div class="instance-item"></div>
-                  <div class="instance-inner"></div>
-                  <div class="instance-child1"></div>
-                  <div class="instance-child2"></div>
+                  
+                  {{-- <div class="bng-bo-gi">
+                    Bảng báo giá thi công sơn và trần thạch cao
+                  </div> --}}
                 </div>
-              </div>
-              <div class="baogia1-1-parent">
                 <img
                   class="baogia1-1-icon"
                   alt=""
-                  src="{{ asset('images/baogia-son1.png') }}"
-                /><img
+                  src="{{ asset('images/bao-gia-son-1.png') }}"
+                />
+              </div>
+              
+              <div class="baogia1-1-parent">
+                <div class="bng-bo-gi-thi-cng-sn-v-t-parent">
+                  <div class="frame-parent60">
+                    <div class="cc-loi-sn-jotun-wrapper">
+                      <div class="cc-loi-sn">Bảng giá thi công sơn</div>
+                    </div>
+                  </div>
+                </div>
+                <img
                   class="baogia1-2-icon"
                   alt=""
-                  src="{{ asset('images/baogia-son2.png') }}"
+                  src="{{ asset('images/bao-gia-son-2.png') }}"
                 />
               </div>
             </div>
@@ -603,6 +481,10 @@ Trang chủ
       </div>
     </div>
   </div>
+@endsection
+
+@section('script')
+  <script src="{{ asset('js/slider.js') }}"></script>
 @endsection
 
 

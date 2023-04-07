@@ -11,26 +11,6 @@
         'maxlength' => 200,
         'required' => true
     ])
-    @formField('select', [
-        'name' => 'type',
-        'label' => 'Loại',
-        'required' => true,
-        'placeholder' => 'Chọn loại sơn',
-        'options' => [
-            [
-                'value' => 1,
-                'label' => 'New York'
-            ],
-            [
-                'value' => 2,
-                'label' => 'London'
-            ],
-            [
-                'value' => 3,
-                'label' => 'Berlin'
-            ]
-        ]
-    ])
 
     @formField('input', [
         'name' => 'feature',
@@ -39,34 +19,16 @@
         'required' => true
     ])
 
-    @formField('input', [
-        'name' => 'specifications',
-        'label' => 'Quy cách',
-        'maxlength' => 200,
+    @formField('select', [
+        'name' => 'paint_categories_id',
+        'label' => 'Loại sơn',
         'required' => true,
-        'note' => 'Ví dụ: 4kg'
+        'placeholder' => 'Chọn loại sơn',
+        'options' => $categoryList
     ])
 
-    @formField('input', [
-        'name' => 'origin_price',
-        'label' => 'Giá gốc',
-        'required' => true,
-        'type' => 'number',
-        'note' => 'Ví dụ: 600000'
-    ])
-
-    @formField('input', [
-        'name' => 'sell_price',
-        'label' => 'Giá bán ra',
-        'required' => true,
-        'type' => 'number',
-        'note' => 'Ví dụ: 600000'
-    ])
-
-    @formField('input', [
-        'name' => 'color',
-        'label' => 'Màu sơn',
-        'note' => 'Ví dụ: Trắng - Xám - Xanh'
+    @formField('repeater', [
+        'type' => 'paints-item',
     ])
 
     @formField('block_editor', [

@@ -13,6 +13,10 @@ return [
         'title' => 'Sơn',
         'module' => true
     ],
+    'paintCategories' => [
+        'title' => 'Loại sơn',
+        'module' => true
+    ],
     'abouts' => [
         'title' => 'Về công ty',
         'module' => true
