@@ -6,7 +6,7 @@
           <div class="frame-parent68">
             <div class="logo-parent3">
               <b class="logo11 logo-header">LOGO</b
-              ><b class="cty-tnhh-icol5">CTY TNHH ICOL</b>
+              ><b class="cty-tnhh-icol5">{{ $about->title }}</b>
             </div>
             <div class="frame-parent69">
               <div class="mail-parent3">
@@ -15,7 +15,7 @@
                   alt="icon-mail"
                   src="{{ asset('images/icons/ic-mail.svg') }}"
                 />
-                <div class="h00-17h005 mail-ft">thiennhat3004@gmail.com</div>
+                <div class="h00-17h005 mail-ft">{{ $about->email }}</div>
               </div>
               <div class="phone-call-parent9">
                 <img
@@ -23,7 +23,7 @@
                   alt=""
                   src="{{ asset('images/icons/ic-phone-white.svg') }}"
                 />
-                <div class="h00-17h005">0705.550.553</div>
+                <div class="h00-17h005">{{ $about->phone_number }}</div>
               </div>
             </div>
           </div>

@@ -14,8 +14,12 @@ Sơn
     <div class="paint-detail-content">
       <div class="crumb8">
         <div class="quy-cch-45kg">
-          <span>Trang chủ &gt; loại sơn &gt; </span
-          ><span class="vn4">Jotun ngoại thất cao cấp nhất</span>
+          <img alt='icon-home' src="{{ asset('images/icons/ic-home.svg') }}" />
+          <div>
+            <span>Trang chủ &gt; </span>
+            <span>loại sơn &gt; </span>
+            <span class="vn4"> Jotun ngoại thất cao cấp nhất</span>
+          </div>
         </div>
       </div>
       <div class="rectangle-parent9">
@@ -217,11 +221,6 @@ Sơn
       <div class="sp-cungloai">
         <div class="title-sp-cungloai1">
           <div class="cc-sn-phm1">Các sản phẩm cùng loại</div>
-          <img
-            class="title-sp-cungloai-item"
-            alt=""
-            src="./public/vector-181.svg"
-          />
         </div>
         <div class="sp-cungloai-inner">
           <div class="instance-group">

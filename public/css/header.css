@@ -152,3 +152,6 @@
   .right-menu-item {
     white-space: nowrap;
   }
+  .right-menu-item a {
+    color: #fff;
+  }

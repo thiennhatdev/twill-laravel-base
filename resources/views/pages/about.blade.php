@@ -12,6 +12,18 @@ Giới thiệu công ty
 @section('content')
   <div class="about-company">
     <div class="about-company-content">
+      <div class="crumb2">
+        <div class="crumb3">
+          <div class="h00-17h001">
+            <img alt='icon-home' src="{{ asset('images/icons/ic-home.svg') }}" />
+            <div>
+              <span>Trang chủ &gt; </span>
+              <span>loại sơn &gt; </span>
+              <span class="jotun-ngoi-tht1"> Jotun ngoại thất cao cấp nhất</span>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="frame-parent8">
         <div class="frame-parent9">
           <div class="cty-trch-nhim-hu-hn-bqsoft-parent">
@@ -57,16 +69,7 @@ Giới thiệu công ty
         </div>
         <img class="frame-item" alt="" src="./public/rectangle-45@2x.png" />
       </div>
-      <div class="crumb2">
-        <div class="crumb3">
-          <div class="h00-17h001">
-            <span>Trang chủ &gt; loại sơn &gt; </span
-            ><span class="jotun-ngoi-tht1"
-              >Jotun ngoại thất cao cấp nhất</span
-            >
-          </div>
-        </div>
-      </div>
+      
     </div>
   </div>
 @endsection

@@ -39,10 +39,8 @@
                   src="{{ asset('images/icons/ic-map.svg') }}"
                 />
                 <div class="h00-17h005">
-                  <span>Địa chỉ</span
-                  ><span class="th-l-5"
-                    >: 134 Thế Lữ - Sơn Trà - Đà Nẵng</span
-                  >
+                  <span>Địa chỉ</span>
+                  <span class="th-l-5">: {{ $about->address }}</span>
                 </div>
               </div>
               <div class="map-pin-parent3">
@@ -53,7 +51,7 @@
                 />
                 <div class="h00-17h005">
                   <span>Hotline</span
-                  ><span class="th-l-5">: 0705.550.553</span>
+                  ><span class="th-l-5">: {{ $about->phone_number }}</span>
                 </div>
               </div>
             </div>

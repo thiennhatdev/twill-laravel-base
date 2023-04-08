@@ -11,6 +11,18 @@ Chi tiết tin
 @section('content')
   <div class="news-detail">
     <div class="news-detail-content-parent">
+      <div class="crumb4">
+        <div class="crumb5">
+          <div class="h00-17h002">
+            <img alt='icon-home' src="{{ asset('images/icons/ic-home.svg') }}" />
+            <div>
+              <span>Trang chủ &gt; </span>
+              <span>loại sơn &gt; </span>
+              <span class="jotun-ngoi-tht2"> Jotun ngoại thất cao cấp nhất</span>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="news-detail-content">
         <div class="news-detail-content-inner">
           <div class="cng-ngh-cht-to-mu-tin-ti-parent">
@@ -56,15 +68,10 @@ Chi tiết tin
         <div class="title-sp-cungloai-parent">
           <div class="title-sp-cungloai">
             <div class="cc-sn-phm">Các sản phẩm cùng loại</div>
-            <img
-              class="title-sp-cungloai-child"
-              alt=""
-              src="./public/vector-18.svg"
-            />
           </div>
           <div class="group-parent">
             <div class="rectangle-container">
-              <div class="group-child"></div>
+              
               <div class="group-container">
                 <div class="sn-jotun-cht-lng-vt-tri-parent">
                   <div class="sn-jotun-cht">
@@ -81,7 +88,7 @@ Chi tiết tin
               </div>
             </div>
             <div class="rectangle-container">
-              <div class="group-child"></div>
+              
               <div class="group-container">
                 <div class="sn-jotun-cht-lng-vt-tri-parent">
                   <div class="sn-jotun-cht">
@@ -98,7 +105,7 @@ Chi tiết tin
               </div>
             </div>
             <div class="rectangle-container">
-              <div class="group-child"></div>
+              
               <div class="group-container">
                 <div class="sn-jotun-cht-lng-vt-tri-parent">
                   <div class="sn-jotun-cht">
@@ -115,7 +122,7 @@ Chi tiết tin
               </div>
             </div>
             <div class="rectangle-container">
-              <div class="group-child"></div>
+              
               <div class="group-container">
                 <div class="sn-jotun-cht-lng-vt-tri-parent">
                   <div class="sn-jotun-cht">
@@ -132,7 +139,7 @@ Chi tiết tin
               </div>
             </div>
             <div class="rectangle-container">
-              <div class="group-child"></div>
+              
               <div class="group-container">
                 <div class="sn-jotun-cht-lng-vt-tri-parent">
                   <div class="sn-jotun-cht">
@@ -148,16 +155,6 @@ Chi tiết tin
                 />
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="crumb4">
-        <div class="crumb5">
-          <div class="h00-17h002">
-            <span>Trang chủ &gt; loại sơn &gt; </span
-            ><span class="jotun-ngoi-tht2"
-              >Jotun ngoại thất cao cấp nhất</span
-            >
           </div>
         </div>
       </div>

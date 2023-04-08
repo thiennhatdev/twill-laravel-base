@@ -29,7 +29,6 @@
     @formField('input', [
         'name' => 'phone_number',
         'label' => 'Số điện thoại',
-        'type' => 'number',
         'maxlength' => 200
     ])
 

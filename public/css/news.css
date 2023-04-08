@@ -1,3 +1,30 @@
+/* start breadcrum */
+.h00-17h003 {
+  align-items: center;
+  display: flex;
+  width: 100%;
+  padding: 0.3rem 0;
+}
+.h00-17h003>div {
+  display: flex;
+  overflow: scroll;
+}
+.h00-17h003>div::-webkit-scrollbar {
+  display: none;
+}
+.h00-17h003>div {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+.h00-17h003>div span {
+  white-space: nowrap;
+}
+
+.h00-17h003 img {
+  margin-right: 0.4rem;
+  width: 20px;
+}
+/* end breadcrum */
 .thi-cong-son-nha-4-1-icon {
     position: relative;
     width: 12.25rem;
@@ -13,8 +40,10 @@
     align-self: stretch;
     font-size: var(--font-size-base);
     font-weight: 200;
-    display: flex;
-    align-items: flex-end;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
   }
   .thi-cong-son-nha-4-1-parent,
   .tiu-parent {
@@ -29,26 +58,21 @@
     padding: var(--padding-7xs) var(--padding-6xs) var(--padding-7xs) 0;
   }
   .thi-cong-son-nha-4-1-parent {
-    position: absolute;
     width: 100%;
-    top: 0;
-    right: 0;
-    left: 0;
-    height: 7.94rem;
     flex-direction: row;
     gap: var(--gap-base);
   }
   .frame-wrapper {
     align-self: stretch;
     position: relative;
-    height: 7.94rem;
     flex-shrink: 0;
+    width: 45%;
   }
   .component-group {
     align-self: stretch;
     flex: 1;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: flex-start;
     justify-content: flex-start;
     gap: var(--gap-mid);
@@ -71,11 +95,6 @@
     gap: var(--gap-mid);
   }
   .frame-parent25 {
-    position: absolute;
-    width: calc(100% - 204px);
-    top: 8.19rem;
-    right: 6.38rem;
-    left: 6.38rem;
     flex-direction: row;
     align-items: flex-start;
     gap: var(--gap-5xl);
@@ -83,7 +102,7 @@
     margin: 0 auto;
   }
   .jotun-ngoi-tht3 {
-    color: var(--red);
+    color: var(--main-color);
   }
   .vector-icon {
     align-self: stretch;
@@ -114,7 +133,6 @@
   .frame-parent24 {
     align-self: stretch;
     position: relative;
-    height: 48.5rem;
     flex-shrink: 0;
     font-size: var(--font-size-xl);
     color: var(--color-black);
@@ -124,6 +142,7 @@
     width: 2.5rem;
     height: 0.06rem;
     overflow: hidden;
+    margin-bottom: var(--margin-top-footer);
   }
 
   .news-list {

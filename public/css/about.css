@@ -1,6 +1,34 @@
+/* start breadcrum */
+.h00-17h001 {
+  align-items: center;
+  display: flex;
+  width: 100%;
+  padding: 0.3rem 0;
+}
+.h00-17h001>div {
+  display: flex;
+  overflow: scroll;
+}
+.h00-17h001>div::-webkit-scrollbar {
+  display: none;
+}
+.h00-17h001>div {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+.h00-17h001>div span {
+  white-space: nowrap;
+}
+
+.h00-17h001 img {
+  margin-right: 0.4rem;
+  width: 20px;
+}
+/* end breadcrum */
 .cty-trch-nhim {
     font-size: var(--font-size-13xl);
     font-weight: 600;
+    text-align: center;
   }
   .chuyn-phn-sn,
   .cty-trch-nhim {
@@ -23,17 +51,13 @@
   }
   .sn-jotun-cao-container,
   .vi-kinh-nghim {
-    position: absolute;
     font-weight: 300;
     display: inline-block;
   }
   .sn-jotun-cao-container {
     width: 100%;
-    top: 4.42rem;
-    left: 0;
     letter-spacing: 0.01em;
     line-height: 134.02%;
-    height: 12.67rem;
   }
   .vi-kinh-nghim {
     width: calc(100% - 1.23px);
@@ -46,7 +70,6 @@
   .sn-jotun-cao-cp-jotashield-c-parent {
     align-self: stretch;
     position: relative;
-    height: 17.09rem;
     flex-shrink: 0;
     font-size: var(--font-inherit);
     font-family: var(--font-inherit);
@@ -61,17 +84,12 @@
   }
   .frame-item {
     position: relative;
-    width: 20.68rem;
+    width: 30%;
     height: 15.54rem;
     flex-shrink: 0;
     object-fit: cover;
   }
   .frame-parent8 {
-    position: absolute;
-    width: calc(100% - 204px);
-    top: 9.88rem;
-    right: 6.38rem;
-    left: 6.38rem;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -81,7 +99,7 @@
     margin: 0 auto;
   }
   .jotun-ngoi-tht1 {
-    color: var(--red);
+    color: var(--main-color);
   }
   .crumb-item {
     align-self: stretch;
@@ -100,26 +118,20 @@
   }
   .crumb3 {
     align-self: stretch;
-    height: 2.25rem;
     flex-shrink: 0;
     gap: var(--gap-xs);
     border-bottom: 1px solid var(--light-silver-bold);
   }
   .crumb2 {
-    position: absolute;
-    width: calc(100% - 204px);
-    top: 4.5rem;
-    right: 6.38rem;
-    left: 6.38rem;
     max-width: var(--maxwidth-1200);
-    margin: 0 auto;
+    margin: var(--breadcrum-top) auto;
   }
   .about-company-content {
     align-self: stretch;
-    height: 45.94rem;
     font-size: var(--font-size-xl);
     color: var(--color-black);
     padding: 0 var(--padding-side);
+    margin-bottom: var(--margin-top-footer);
   }
   .about-company {
     position: relative;

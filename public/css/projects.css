@@ -1,9 +1,36 @@
+/* start breadcrum */
+.th-2- {
+  align-items: center;
+  display: flex;
+  width: 100%;
+  padding: 0.3rem 0;
+}
+.th-2->div {
+  display: flex;
+  overflow: scroll;
+}
+.th-2->div::-webkit-scrollbar {
+  display: none;
+}
+.th-2->div {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+.th-2->div span {
+  white-space: nowrap;
+}
+
+.th-2- img {
+  margin-right: 0.4rem;
+  width: 20px;
+}
+/* end breadcrum */
 .component-child {
     flex: 1;
     position: relative;
     max-width: 100%;
     overflow: hidden;
-    height: 21.13rem;
+    height: 18rem;
     object-fit: cover;
   }
   .cng-trnh {
@@ -62,17 +89,11 @@
     justify-content: flex-start;
   }
   .rectangle-group {
-    width: 76.33rem;
     flex-direction: row;
     align-items: flex-start;
     gap: var(--gap-2xl);
   }
   .component-parent {
-    position: absolute;
-    width: calc(100% - 204px);
-    top: 9.25rem;
-    right: 6.38rem;
-    left: 6.38rem;
     flex-direction: column;
     align-items: center;
     gap: var(--gap-21xl);
@@ -80,7 +101,7 @@
     margin: 0 auto;
   }
   .jotun-ngoi-tht {
-    color: var(--red);
+    color: var(--main-color);
   }
   .crumb-child {
     align-self: stretch;
@@ -105,20 +126,15 @@
     border-bottom: 1px solid var(--light-silver-bold);
   }
   .crumb {
-    position: absolute;
-    width: calc(100% - 204px);
-    top: 3.81rem;
-    right: 6.38rem;
-    left: 6.38rem;
     max-width: var(--maxwidth-1200);
-    margin: 0 auto;
+    margin: var(--breadcrum-top) auto;
   }
   .frame-div {
     align-self: stretch;
-    height: 82.75rem;
     font-size: var(--font-size-xl);
     color: var(--color-black);
     padding: 0 var(--padding-side);
+    margin-bottom: var(--margin-top-footer);
   }
   .project-list {
     position: relative;

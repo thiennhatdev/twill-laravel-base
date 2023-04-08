@@ -37,6 +37,27 @@
     .frame-parent69 {
         align-items: center;
     }
+    .news-detail-content-parent .news-detail-content {
+        flex-direction: column;
+    }
+    .title-sp-cungloai-parent .group-parent {
+        flex-direction: row;
+    }
+    .news-detail-content .title-sp-cungloai-parent {
+        width: 100%;
+    }
+    .title-sp-cungloai-parent .group-parent {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .thi-cong-son-nha-4-1-parent .thi-cong-son-nha-4-1-icon {
+        width: 9rem;
+        height: 6rem;
+    }
+    .rectangle-parent9 .frame-child10 {
+        width: 200px;
+    }
 }
 @media all and (max-width: 768px) {  
     :root { 
@@ -44,6 +65,7 @@
         --font-size-xl: 1rem;
         --font-size-5xl: 1.25rem;
         --margin-top-footer: 30px;
+        --breadcrum-top: 30px;
     } 
     .bo-gi-thi-cng-sn-wrapper3 {
         padding: 0.2rem 1rem;
@@ -112,6 +134,35 @@
         width: 46%;
         min-width: 200px;
     }
+    .cty-trch-nhim-hu-hn-bqsoft-parent .cty-trch-nhim {
+        font-size: 1.5rem;
+    }
+    .about-company-content .frame-parent8 {
+        flex-direction: column;
+    }
+    .frame-parent8 .frame-item {
+        width: 100%;
+    }
+    .group-parent .rectangle-container {
+        width: 100%;
+    }
+    .rectangle-container .group-container {
+        width: 100%;
+    }
+    .group-container .sn-jotun-cht-lng-vt-tri-parent {
+        width: 100%;
+        justify-content: flex-end;
+    }
+    .cng-ngh-cht-to-mu-tin-ti-parent .cng-ngh-cht {
+        font-size: 1.5rem;
+    }
+    .component-group .frame-wrapper {
+        width: 100%;
+    }
+    .rectangle-parent .component-child {
+        height: 14rem;
+    }
+
 }
 @media all and (max-width: 576px) {  
     :root { 
@@ -187,11 +238,75 @@
     .frame-parent69 {
         gap: 0.2rem;
     }
+    .thi-cong-son-nha-4-1-parent .thi-cong-son-nha-4-1-icon {
+        width: 8rem;
+        height: 5rem;
+    }
+    .paint-detail-content .rectangle-parent9 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .rectangle-parent9 .frame-child10 {
+        width: 50%;
+    }
+    .sp-cungloai-inner .instance-group {
+        flex-direction: column;
+        align-items: center;
+    }
+    .component-parent .rectangle-parent {
+        flex-direction: column;
+    }
+    .component-parent .rectangle-parent:nth-child(2n) {
+        flex-direction: column-reverse;
+    }
+    .rectangle-parent .component-child {
+        width: 100%;
+    }
+    .price-table .real-image-list {
+        height: max-content;
+    }
+    .real-image-list .image-list {
+        height: max-content;
+    }
+    .image-list .frame-parent61 {
+        height: max-content;
+        gap: 1rem;
+    }
+    .frame-parent61 .frame-parent62 {
+        width: 100%;
+        height: max-content;
+    }
+    .frame-parent62 .rectangle-parent31 {
+        flex-direction: column;
+        height: max-content;
+    }
+    .rectangle-parent31 .frame-parent63 {
+        height: max-content;
+        width: 100%;
+    }
+    .frame-parent63 .rectangle-parent32 {
+        height: max-content;
+        flex-direction: column;
+    }
+    .frame-parent62 .frame-parent64 {
+        height: max-content;
+        flex-direction: column;
+    }
+    .frame-parent64 .rectangle-parent34 {
+        flex-direction: column;
+        width: 100%;
+    }
+    .frame-parent62 img {
+        width: 100%;
+        height: 200px !important;
+        flex: auto;
+    }
 }
 
 @media all and (max-width: 440px) { 
     :root { 
         --padding-side: 14px;
+        --breadcrum-top: 28px;
     } 
     .menu5 {
         align-items: center;
@@ -253,5 +368,11 @@
     .btn-phone-call {
         width: 3rem;
         height: 3rem;
+    }
+    .cty-trch-nhim-hu-hn-bqsoft-parent .cty-trch-nhim {
+        font-size: 1.2rem;
+    }
+    .rectangle-parent9 .frame-child10 {
+        height: 200px;
     }
 }

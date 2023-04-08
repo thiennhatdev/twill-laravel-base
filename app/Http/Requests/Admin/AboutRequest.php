@@ -15,8 +15,6 @@ class AboutRequest extends Request
     {
         return [
             'email' => 'email',
-            'phone_number' => 'numeric',
-            'fanpage' => 'url',
             'blocks' => 'validBlocks'
         ];
     }

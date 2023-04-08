@@ -12,6 +12,18 @@ Danh sách dự án
 @section('content')
   <div class="project-list">
     <div class="frame-div">
+      <div class="crumb">
+        <div class="crumb1">
+          <div class="th-2-">
+            <img alt='icon-home' src="{{ asset('images/icons/ic-home.svg') }}" />
+            <div>
+              <span>Trang chủ &gt; </span>
+              <span>loại sơn &gt; </span>
+              <span class="jotun-ngoi-tht"> Jotun ngoại thất cao cấp nhất</span>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="component-parent">
         <div class="rectangle-parent">
           <img
@@ -74,14 +86,6 @@ Danh sách dự án
               Mô tả: Thực hiện sơn toàn bộ cho công trình Thực hiện sơn toàn
               bộ cho công trình Thực hiện sơn toàn bộ cho công trình
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="crumb">
-        <div class="crumb1">
-          <div class="th-2-">
-            <span>Trang chủ &gt; loại sơn &gt; </span
-            ><span class="jotun-ngoi-tht">Jotun ngoại thất cao cấp nhất</span>
           </div>
         </div>
       </div>

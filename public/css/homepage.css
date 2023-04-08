@@ -177,7 +177,10 @@
   align-items: center;
 }
 .category-right-head {
-  height: 100%;
+  top: 2px;
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
   width: 50%;
   background: #fff;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 5% 100%, 0% 0%);
@@ -186,6 +189,7 @@
   position: relative;
   height: 100%;
   width: 100%;
+  padding: 0.2rem 0;
 }
 .paint-category-title {
   padding: 0 1rem;
@@ -199,7 +203,7 @@
 .vector-parent {
   position: relative;
   width: 100%;
-  height: 4rem;
+  height: max-content;
   flex-shrink: 0;
   display: flex;
   background: var(--main-color);
