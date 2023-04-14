@@ -1,0 +1,32 @@
+.not-found {
+    padding: 9rem 0;
+}
+.not-found div {
+    margin: 0 auto;
+    width: max-content;
+    text-align: center;
+}
+.not-found div h1 {
+    color: var(--red);
+    margin: 0;
+    font-size: 9rem;
+}
+
+.not-found div h2 {
+    color: var(--red);
+    border-top: 1px dashed;
+    padding: 1rem;
+    margin: 0;
+    font-weight: 200;
+}
+
+.not-found div button {
+    border: 2px solid;
+    padding: 0.4rem 1rem;
+    background: transparent;
+}
+
+.not-found div a {
+    color: #000;
+    text-decoration: underline;
+}

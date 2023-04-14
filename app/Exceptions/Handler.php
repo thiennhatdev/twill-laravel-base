@@ -38,4 +38,37 @@ class Handler extends ExceptionHandler
             //
         });
     }
+
+    /**
+     * Render an exception into an HTTP response.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Throwable  $exception
+     * @return \Symfony\Component\HttpFoundation\Response
+     *
+     * @throws \Throwable
+     */
+
+    public function render($request, Throwable $exception)
+    {
+        if($this->isHttpException($exception)) {
+            switch ($exception->getStatusCode()) {
+                // not found
+                case 404:
+                    return redirect()->route('404');
+                    break;
+
+                // internal error
+                case 500:
+                    return redirect()->route('404');
+                    break;
+
+                default:
+                    return $this->renderHttpException($exception);
+                    break;
+            }
+        } else {
+            return parent::render($request, $exception);
+        }
+    }
 }

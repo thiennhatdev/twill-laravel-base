@@ -4,10 +4,13 @@
   display: flex;
   width: 100%;
   padding: 0.3rem 0;
+  gap: 10px;
 }
 .h00-17h001>div {
   display: flex;
   overflow: scroll;
+  align-items: center;
+  gap: 10px;
 }
 .h00-17h001>div::-webkit-scrollbar {
   display: none;
@@ -19,10 +22,11 @@
 .h00-17h001>div span {
   white-space: nowrap;
 }
-
+.h00-17h001>div span a {
+  color: #000;
+}
 .h00-17h001 img {
-  margin-right: 0.4rem;
-  width: 20px;
+  height: 13px;
 }
 /* end breadcrum */
 .cty-trch-nhim {

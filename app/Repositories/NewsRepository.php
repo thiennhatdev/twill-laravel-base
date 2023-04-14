@@ -19,4 +19,31 @@ class NewsRepository extends ModuleRepository
     {
         $this->model = $model;
     }
+
+    public function allNews()
+    {
+        $allNews = $this->model
+                ->published() 
+                ->get()
+                ->toQuery()
+                ->paginate(10);  
+        return $allNews;
+    }
+
+    public function newsDetail($id)
+    {
+        $news = News::where('id', $id)
+                ->published() 
+                ->first();
+        return $news;
+    }
+
+    public function recentNews()
+    {
+        $recent_news = $this->model
+        ->published() 
+        ->get()
+        ->take(5);
+        return $recent_news;
+    }
 }

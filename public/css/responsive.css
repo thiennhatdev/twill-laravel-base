@@ -58,6 +58,13 @@
     .rectangle-parent9 .frame-child10 {
         width: 200px;
     }
+    .sp-cungloai-inner .instance-group {
+        grid-template-columns: auto auto auto;
+    }
+    .search-outer .wrap-search {
+        grid-template-columns: auto auto auto;
+    }
+    
 }
 @media all and (max-width: 768px) {  
     :root { 
@@ -162,7 +169,12 @@
     .rectangle-parent .component-child {
         height: 14rem;
     }
-
+    .sp-cungloai-inner .instance-group {
+        grid-template-columns: auto auto;
+    }
+    .search-outer .wrap-search {
+        grid-template-columns: auto auto;
+    }
 }
 @media all and (max-width: 576px) {  
     :root { 
@@ -301,6 +313,18 @@
         height: 200px !important;
         flex: auto;
     }
+    .not-found {
+        padding: 6rem 0 !important;
+    }
+    .not-found div h1 {
+        font-size: 7rem !important;
+    }
+    .result-empty {
+        font-size: 1.5rem;
+    }
+    .search-outer .wrap-search {
+        grid-template-columns: auto;
+    }
 }
 
 @media all and (max-width: 440px) { 
@@ -374,5 +398,8 @@
     }
     .rectangle-parent9 .frame-child10 {
         height: 200px;
+    }
+    .sp-cungloai-inner .instance-group {
+        grid-template-columns: auto;
     }
 }

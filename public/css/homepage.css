@@ -129,6 +129,12 @@
   background-position: center center;
   background-repeat: no-repeat;
 }
+.slide-inner>div:nth-child(2) {
+  transform: translateX(100%);
+}
+.slide-inner>div:nth-child(3) {
+  transform: translateX(200%);
+}
 /* slider for banner */
 
 .paint-appendix {
@@ -355,6 +361,11 @@
   position: absolute;
   z-index: 1;
   transition: left .4s cubic-bezier(.47,.13,.15,.89);
+}
+.form-search-paint {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 .wrap-search-product {
   display: flex;
@@ -669,6 +680,7 @@
   align-items: center;
   justify-content: flex-start;
   gap: 0.44rem;
+  color: var(--main-blue);
 }
 .frame-parent61,
 .image-list {
@@ -772,7 +784,7 @@
   margin: 3rem 0 3rem;
 }
 .price-table-content h3 {
-  margin: 0;
+  margin: 0 0 1rem;
   font-weight: 600;
   font-size: 32px;
   line-height: 38px;
@@ -810,4 +822,19 @@
   font-size: var(--font-size-5xl);
   color: var(--color-white);
   font-family: var(--font-inter);
+}
+
+.btn-to-top {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: var(--main-color);
+  border-radius: 999px;
+  cursor: pointer;
+  z-index: 10;
 }

@@ -14,22 +14,26 @@
         <div class="menu-item-parent3">
           <div class="menu-item15">
             <div class="xem-thm right-menu-item">
-              <a href="#">Tin tức</a>
+              <a href="{{ URL::route('news') }}">Tin tức</a>
             </div>
           </div>
           <div class="menu-item17">
             <div class="xem-thm right-menu-item">
-              <a href="#">Giới thiệu</a>
+              <a href="{{ URL::route('about') }}">Giới thiệu</a>
             </div>
           </div>
         </div>
       </div>
       <div class="menu5">
-        <b class="logo10 logo-header">LOGO</b>
+        <a href="{{ URL::route('homepage') }}">
+          <b class="logo10 logo-header">LOGO</b>
+        </a>
         <div class="menu-inner4">
           <div class="frame-parent42">
             <div class="bo-gi-thi-cng-sn-wrapper3">
-              <div class="h00-17h005">Báo giá thi công sơn</div>
+              <a href="{{ URL::route('homepage') . '#paint-price-table' }}">
+                <div class="h00-17h005">Báo giá thi công sơn</div>
+              </a>
             </div>
             <div class="frame-parent43">
               <div class="map-pin-parent3">

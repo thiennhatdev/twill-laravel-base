@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('title')
-Tin tức
+Danh sách tin
 @endsection
 
 @section('head')
@@ -14,139 +14,40 @@ Tin tức
       <div class="crumb6">
         <div class="crumb7">
           <div class="h00-17h003">
-            <img alt='icon-home' src="{{ asset('images/icons/ic-home.svg') }}" />
+            <img alt='icon-home' class='ic-home-breadcrum' src="{{ asset('images/icons/ic-home-breadcrum.svg') }}" />
             <div>
-              <span>Trang chủ &gt; </span>
-              <span>loại sơn &gt; </span>
-              <span class="jotun-ngoi-tht3"> Jotun ngoại thất cao cấp nhất</span>
+              <span>
+                <a href="{{ URL::route('homepage') }}">
+                  Trang chủ
+                </a>  
+              </span>
+              <img alt='arrow-right' src="{{ asset('images/icons/ic-arrow-breadcrum.svg') }}" />
+              <span class="jotun-ngoi-tht3">Danh sách tin</span>
             </div>
           </div>
         </div>
       </div>
       <div class="frame-parent25">
         <div class="component-group">
-          <div class="frame-wrapper">
-            <div class="thi-cong-son-nha-4-1-parent">
-              <img
-                class="thi-cong-son-nha-4-1-icon"
-                alt=""
-                src="./public/thicongsonnha4-1@2x.png"
-              />
-              <div class="tiu-parent">
-                <div class="tiu">tiêu đề</div>
-                <div class="b-trng-nguyn">
-                  Bộ trưởng Nguyễn Mạnh Hùng cho rằng làm xuất bản giờ đây là
-                  làm ra nhiều phiên bản của sách phù hợp với mỗi loại nền
-                  tảng. "Vô hình vạn tướng" là tương lai của sách.
+          @foreach($news as $item)
+            <div class="frame-wrapper">
+              <div class="thi-cong-son-nha-4-1-parent">
+                <div class="tiu-parent">
+                  <div class="tiu">
+                    <a href="{{ URL::route('news-detail', ['id' => $item->id, 'slug' => $item->slug]) }}" title="{{ $item->title }}">
+                      {{ $item->title }}
+                    </a>
+                  </div>
+                  <div class="b-trng-nguyn">
+                    {{ $item->description }}
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="frame-wrapper">
-            <div class="thi-cong-son-nha-4-1-parent">
-              <img
-                class="thi-cong-son-nha-4-1-icon"
-                alt=""
-                src="./public/thicongsonnha4-1@2x.png"
-              />
-              <div class="tiu-parent">
-                <div class="tiu">tiêu đề</div>
-                <div class="b-trng-nguyn">
-                  Bộ trưởng Nguyễn Mạnh Hùng cho rằng làm xuất bản giờ đây là
-                  làm ra nhiều phiên bản của sách phù hợp với mỗi loại nền
-                  tảng. "Vô hình vạn tướng" là tương lai của sách.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="frame-wrapper">
-            <div class="thi-cong-son-nha-4-1-parent">
-              <img
-                class="thi-cong-son-nha-4-1-icon"
-                alt=""
-                src="./public/thicongsonnha4-1@2x.png"
-              />
-              <div class="tiu-parent">
-                <div class="tiu">tiêu đề</div>
-                <div class="b-trng-nguyn">
-                  Bộ trưởng Nguyễn Mạnh Hùng cho rằng làm xuất bản giờ đây là
-                  làm ra nhiều phiên bản của sách phù hợp với mỗi loại nền
-                  tảng. "Vô hình vạn tướng" là tương lai của sách.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="frame-wrapper">
-            <div class="thi-cong-son-nha-4-1-parent">
-              <img
-                class="thi-cong-son-nha-4-1-icon"
-                alt=""
-                src="./public/thicongsonnha4-1@2x.png"
-              />
-              <div class="tiu-parent">
-                <div class="tiu">tiêu đề</div>
-                <div class="b-trng-nguyn">
-                  Bộ trưởng Nguyễn Mạnh Hùng cho rằng làm xuất bản giờ đây là
-                  làm ra nhiều phiên bản của sách phù hợp với mỗi loại nền
-                  tảng. "Vô hình vạn tướng" là tương lai của sách.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="frame-wrapper">
-            <div class="thi-cong-son-nha-4-1-parent">
-              <img
-                class="thi-cong-son-nha-4-1-icon"
-                alt=""
-                src="./public/thicongsonnha4-1@2x.png"
-              />
-              <div class="tiu-parent">
-                <div class="tiu">tiêu đề</div>
-                <div class="b-trng-nguyn">
-                  Bộ trưởng Nguyễn Mạnh Hùng cho rằng làm xuất bản giờ đây là
-                  làm ra nhiều phiên bản của sách phù hợp với mỗi loại nền
-                  tảng. "Vô hình vạn tướng" là tương lai của sách.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="frame-wrapper">
-            <div class="thi-cong-son-nha-4-1-parent">
-              <img
-                class="thi-cong-son-nha-4-1-icon"
-                alt=""
-                src="./public/thicongsonnha4-1@2x.png"
-              />
-              <div class="tiu-parent">
-                <div class="tiu">tiêu đề</div>
-                <div class="b-trng-nguyn">
-                  Bộ trưởng Nguyễn Mạnh Hùng cho rằng làm xuất bản giờ đây là
-                  làm ra nhiều phiên bản của sách phù hợp với mỗi loại nền
-                  tảng. "Vô hình vạn tướng" là tương lai của sách.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="frame-wrapper">
-            <div class="thi-cong-son-nha-4-1-parent">
-              <img
-                class="thi-cong-son-nha-4-1-icon"
-                alt=""
-                src="./public/thicongsonnha4-1@2x.png"
-              />
-              <div class="tiu-parent">
-                <div class="tiu">tiêu đề</div>
-                <div class="b-trng-nguyn">
-                  Bộ trưởng Nguyễn Mạnh Hùng cho rằng làm xuất bản giờ đây là
-                  làm ra nhiều phiên bản của sách phù hợp với mỗi loại nền
-                  tảng. "Vô hình vạn tướng" là tương lai của sách.
-                </div>
-              </div>
-            </div>
-          </div>
+          @endforeach
         </div>
       </div>
-      
+      @include('components.pagination.default', ['paginator' => $news, 'link_limit' => 10])
     </div>
     <div class="news-list-child"></div>
   </div>

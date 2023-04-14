@@ -15,7 +15,7 @@ class AboutController extends Controller
     public function index() 
     {
         return view('pages.about', [
-            'abouts' => $this->aboutRepository->index()
+            'abouts' => $this->aboutRepository->index()[0]
         ]);
     }
 }

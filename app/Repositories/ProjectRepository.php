@@ -24,6 +24,8 @@ class ProjectRepository extends ModuleRepository
         return $this->model
         ->published()
         ->orderBy('title')
-        ->get();
+        ->get()
+        ->toQuery()
+        ->paginate(10);
     }
 }

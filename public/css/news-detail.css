@@ -4,10 +4,13 @@
   display: flex;
   width: 100%;
   padding: 0.3rem 0;
+  gap: 10px;
 }
 .h00-17h002>div {
   display: flex;
   overflow: scroll;
+  align-items: center;
+  gap: 10px;
 }
 .h00-17h002>div::-webkit-scrollbar {
   display: none;
@@ -19,10 +22,11 @@
 .h00-17h002>div span {
   white-space: nowrap;
 }
-
+.h00-17h002>div span a {
+  color: #000;
+}
 .h00-17h002 img {
-  margin-right: 0.4rem;
-  width: 20px;
+  height: 13px;
 }
 /* end breadcrum */
 .cng-ngh-cht {
@@ -61,7 +65,7 @@
   }
   .cng-ngh-cht-to-mu-tin-ti-parent {
     align-self: stretch;
-    gap: var(--gap-mini);
+    gap: 3rem;
   }
   .news-detail-content-inner {
     flex: 1;
@@ -88,12 +92,18 @@
     justify-content: flex-start;
     gap: var(--gap-xs);
     border-bottom: 1px solid var(--light-silver-bold);
-    padding-bottom: 0.5rem;
-    color: var(--main-color);
+    background: var(--main-color);
+    padding: 0.5rem 0.8rem;
+    color: #fff;
   }
   .sn-jotun-cht {
+    line-height: 140%;
     font-weight: 200;
     margin-top: 0.4rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
   }
   .sn-jotun-p {
     font-size: var(--font-size-base);
@@ -102,21 +112,24 @@
     width: 11.7rem;
     height: 1.02rem;
   }
+  .sn-jotun-p a {
+    color: #000;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+  }
   .sn-jotun-cht-lng-vt-tri-parent {
-    width: 11.7rem;
     display: flex;
     flex-direction: column-reverse;
+    padding: 0.5rem 0.8rem;
+    border-bottom: 1px solid var(--light-silver-bold);
   }
-  .group-item {
-    border-radius: var(--br-9xs);
-    width: 4.69rem;
-    height: 4rem;
-    object-fit: cover;
+  .rectangle-container:last-child .sn-jotun-cht-lng-vt-tri-parent {
+    border-bottom: none;
   }
   .group-container {
-    width: 16.89rem;
-    display: flex;
-    flex-direction: row-reverse;
+    width: 100%;
     gap: 0.8rem;
   }
   .rectangle-container {
@@ -126,10 +139,10 @@
   }
   .group-parent {
     width: 17.61rem;
-    flex-direction: column;
-    gap: 0.56rem;
     font-size: var(--font-size-sm);
     color: var(--color-black);
+    display: grid !important;
+    grid-template-columns: auto;
   }
   .group-parent,
   .news-detail-content,
@@ -142,9 +155,9 @@
     width: 17.69rem;
     flex-shrink: 0;
     flex-direction: column;
-    gap: 1.38rem;
     font-size: var(--font-size-5xl);
     color: var(--red);
+    border: 1px solid var(--light-silver-bold);
   }
   .news-detail-content {
     flex-direction: row;

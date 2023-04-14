@@ -199,6 +199,7 @@ let next = document.getElementById('next');
 
 for (let index = 0; index < slidesBanner.length; index++) {
     const element = slidesBanner[index];
+    // element.style.display = "block";
     element.style.transform = "translateX("+100*(index)+"%)";
 }
 let loop = 0 + 1000*slideSayisi;
@@ -207,6 +208,7 @@ function goNext(){
     loop++;
     for (let index = 0; index < slidesBanner.length; index++) {
         const element = slidesBanner[index];
+        // element.style.display = "block";
         element.style.transform = "translateX("+100*(index-loop%slideSayisi)+"%)";
     }
 }
@@ -233,4 +235,22 @@ document.addEventListener('keydown',function(e){
 setInterval(() => {
     goNext();
 }, 6000);
+
+// back to top
+window.onscroll = () => {
+  toggleTopButton();
+}
+function scrollToTop(){
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
+function toggleTopButton() {
+  if (document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20) {
+    document.getElementById('btn-to-top').style.display = 'flex';
+  } else {
+    document.getElementById('btn-to-top').style.display = 'none';
+  }
+}
+// back to top
 

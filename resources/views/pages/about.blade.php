@@ -15,11 +15,15 @@ Giới thiệu công ty
       <div class="crumb2">
         <div class="crumb3">
           <div class="h00-17h001">
-            <img alt='icon-home' src="{{ asset('images/icons/ic-home.svg') }}" />
+            <img alt='icon-home' class='ic-home-breadcrum' src="{{ asset('images/icons/ic-home-breadcrum.svg') }}" />
             <div>
-              <span>Trang chủ &gt; </span>
-              <span>loại sơn &gt; </span>
-              <span class="jotun-ngoi-tht1"> Jotun ngoại thất cao cấp nhất</span>
+              <span>
+                <a href="{{ URL::route('homepage') }}">
+                  Trang chủ
+                </a>  
+              </span>
+              <img alt='arrow-right' src="{{ asset('images/icons/ic-arrow-breadcrum.svg') }}" />
+              <span class="jotun-ngoi-tht1"> Giới thiệu công ty</span>
             </div>
           </div>
         </div>
@@ -27,47 +31,25 @@ Giới thiệu công ty
       <div class="frame-parent8">
         <div class="frame-parent9">
           <div class="cty-trch-nhim-hu-hn-bqsoft-parent">
-            <div class="cty-trch-nhim">CTY TRÁCH NHIỆM HỮU HẠN BQSOFT</div>
+            <div class="cty-trch-nhim">{{ $abouts->title }}</div>
             <div class="chuyn-phn-sn">
-              Chuyên phấn sơn Jotun chính hãng uy tín cả nước
+              {{ $abouts->description }}
             </div>
             <div class="chuyn-phn-sn">
-              Địa chỉ: 134 Nguỹen Hữu Thọ - Đà Nẵng
+              Địa chỉ: {{ $abouts->address }}
             </div>
             <div class="chuyn-phn-sn">
-              Email: abc@gmail.com - Hotline: 0705.550.553
+              Email: {{ $abouts->email }} - Hotline: {{ $abouts->phone_number }}
             </div>
             <div class="chuyn-phn-sn">
-              Fanpage: http://facebook.com/sonjotun
+              Fanpage: {{ $abouts->fanpage }}
             </div>
           </div>
           <div class="sn-jotun-cao-cp-jotashield-c-parent">
-            <div class="sn-jotun-cao-container">
-              <ul class="sn-jotun-cao-cp-jotashield-c">
-                <li class="sn-jotun-cao">
-                  Sơn Jotun cao cấp Jotashield có khả năng
-                </li>
-                <li class="sn-jotun-cao">
-                  chống rong rêu và nấm mốc với công nghệ hoàn toàn khác các
-                  sản phẩm sơn khác.
-                </li>
-                <li class="sn-jotun-cao">
-                  Sản phẩm sử dụng công nghệ chất kháng khuẩn tiên tiến nhất
-                  nên ngăn chặn hoàn toàn
-                </li>
-                <li class="sn-jotun-cao">
-                  sự hình thành và phát triển của rong rêu,
-                </li>
-                <li>nấm mốc.</li>
-              </ul>
-            </div>
-            <div class="vi-kinh-nghim">
-              Với kinh nghiệm 16 năm trong nghề , chúng tôi chuyên cung cấp
-              .....
-            </div>
+            {!! $abouts->renderBlocks() !!}
           </div>
         </div>
-        <img class="frame-item" alt="" src="./public/rectangle-45@2x.png" />
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.6762041967354!2d108.2351454!3d16.0822838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421820feb2509f%3A0x9121f9a30c886258!2zMTM0IFRo4bq_IEzhu68sIEFuIEjhuqNpIELhuq9jLCBTxqFuIFRyw6AsIMSQw6AgTuG6tW5nIDU1MDAwMA!5e0!3m2!1svi!2s!4v1681216674975!5m2!1svi!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       
     </div>

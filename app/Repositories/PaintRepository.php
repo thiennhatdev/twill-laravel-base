@@ -48,4 +48,45 @@ class PaintRepository extends ModuleRepository
                 return count($stats);
             });
     }
+
+    public function paintDetail($id)
+    {
+        $paint = Paint::where('id', $id)
+                ->where('deleted_at', '=', null)
+                ->first()
+                ->leftJoin('paint_categories', 'paints.paint_categories_id', '=', 'paint_categories.id')
+                ->select('paints_items.*', 'paints.*', 'paint_categories.title as categoriesName')
+                ->rightJoin('paints_items', 'paints.id', '=', 'paints_items.paint_id')
+                ->where('paint_id', '=', $id)
+                ->get();
+        return $paint;
+    }
+
+    public function relatedPaintsByPaintId($id)
+    {
+        $paint_categories_id = Paint::where('id', $id)
+                ->where('deleted_at', '=', null)
+                ->first()
+                ->paint_categories_id;
+        $related_paints = Paint::where('paint_categories_id', $paint_categories_id)
+                ->leftJoin('paint_categories', 'paints.paint_categories_id', '=', 'paint_categories.id')
+                ->select('paints.*', 'paint_categories.title as categoriesName')                        
+                ->get();
+        return $related_paints;
+    }
+
+    public function searchPaints($slug)
+    {
+        $query = str_replace('-', ' ', $slug);
+        $results = Paint::where('paints.title', 'LIKE', '%' . $query . '%')
+                    ->where('paints.deleted_at', '=', null)
+                    ->published()
+                    ->rightJoin('paints_items','paints_items.paint_id','=','paints.id')
+                    ->select('paints_items.*','paints.*')
+                    ->leftJoin('paint_categories', 'paints.paint_categories_id', '=', 'paint_categories.id')
+                    ->select('paints_items.*', 'paints.*', 'paint_categories.title as categoriesName')
+                    ->paginate(10)
+                    ;
+        return $results;
+    }
 }

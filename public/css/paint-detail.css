@@ -4,10 +4,13 @@
   display: flex;
   width: 100%;
   padding: 0.3rem 0;
+  gap: 10px;
 }
 .quy-cch-45kg>div {
   display: flex;
   overflow: scroll;
+  align-items: center;
+  gap: 10px;
 }
 .quy-cch-45kg>div::-webkit-scrollbar {
   display: none;
@@ -19,45 +22,23 @@
 .quy-cch-45kg>div span {
   white-space: nowrap;
 }
-
+.quy-cch-45kg>div span a {
+  color: #000;
+}
 .quy-cch-45kg img {
-  margin-right: 0.4rem;
-  width: 20px;
+  height: 13px;
 }
 /* end breadcrum */
+.vn4 {
+  color: var(--main-color);
+}
   .frame-child3 {
     position: absolute;
     top: 0;
     left: 0;
     width: 11.44rem;
     height: 10.69rem;
-    object-fit: cover;
-  }
-  .ellipse-icon {
-    position: relative;
-    width: 3.44rem;
-    height: 3.44rem;
-    flex-shrink: 0;
-  }
-  .ellipse-parent,
-  .kg {
-    display: flex;
-    align-items: center;
-  }
-  .kg {
-    align-self: stretch;
-    flex: 1;
-    position: relative;
-    justify-content: center;
-    margin-top: -4.69rem;
-  }
-  .ellipse-parent {
-    position: absolute;
-    top: -1.12rem;
-    left: 9.13rem;
-    height: 3.44rem;
-    flex-direction: column;
-    justify-content: flex-start;
+    object-fit: contain;
   }
   .rectangle-parent5 {
     position: relative;
@@ -71,8 +52,10 @@
     color: var(--color-black);
     display: inline-block;
     width: 11.44rem;
-    height: 3.31rem;
     flex-shrink: 0;
+  }
+  .sn-alex-ngoi a {
+    color: black;
   }
   .sn-alex-ngoi,
   .vn {
@@ -83,14 +66,6 @@
     display: flex;
     align-items: center;
   }
-  .frame {
-    background-color: var(--red);
-    box-shadow: 5px 4px 2px rgba(0, 0, 0, 0.25);
-    flex-direction: row;
-    padding: var(--padding-8xs) var(--padding-6xs);
-    justify-content: center;
-    font-size: var(--font-size-xl);
-  }
   .frame-parent33 {
     flex-direction: column;
     justify-content: flex-start;
@@ -98,16 +73,12 @@
   }
   .instance-group {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 3rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
   }
   .sp-cungloai-inner {
     width: calc(100% - 0.02px);
-    margin-top: 50px;
+    margin: 1rem 0;
   }
   .cc-sn-phm1 {
     position: relative;
@@ -132,8 +103,9 @@
     gap: var(--gap-xs);
     text-align: left;
     font-size: var(--font-size-5xl);
-    color: var(--main-color);
-    padding-bottom: 0.5rem;
+    color: #fff;
+    background: var(--main-color);
+    padding: 0.5rem;
   }
   .sp-cungloai {
     position: relative;
@@ -142,6 +114,7 @@
     color: var(--color-white);
     max-width: var(--maxwidth-1200);
     margin: 0 auto;
+    border: 1px solid var(--main-color);
   }
   .sn-jotun {
     color: inherit;
@@ -159,6 +132,14 @@
   .sn-jotun-ca {
     text-decoration: underline;
   }
+  table {
+    border-collapse: collapse;
+  }
+  table th,
+  table td {
+    border: 1px solid black;
+    padding: 0.4rem 1rem;
+  }
   .th-trng-vit-container1 {
     line-break: anywhere;
     width: 100%;
@@ -168,30 +149,28 @@
     font-weight: 300;
     font-family: var(--font-inherit);
     color: var(--font-inherit);
-    display: flex;
-    align-items: flex-end;
     max-width: var(--maxwidth-1200);
-    margin: var(--breadcrum-top) auto;
+    margin: var(--padding-83xl) auto;
+  }
+  .th-trng-vit-container li {
+    list-style-type: inherit;
   }
   .frame-child10 {
     position: relative;
     width: 30%;
     height: 300px;
     flex-shrink: 0;
-    object-fit: cover;
+    object-fit: contain;
   }
   .tn-sn-phm {
-    font-weight: 300;
+    font-weight: 600;
   }
   .jotun-interior-putty {
-    font-weight: 600;
+    font-weight: 400;
   }
   .quy-cch-45kg {
     position: relative;
     font-weight: 300;
-  }
-  .vn4 {
-    color: var(--main-color);
   }
   .rectangle-parent9,
   .thongtin-sanpham {
@@ -251,5 +230,14 @@
     color: var(--color-white);
     font-family: var(--font-inter);
     margin-bottom: var(--margin-top-footer);
+  }
+
+  .paint-more-info {
+    margin-bottom: 50px;
+    border-bottom: 1px solid var(--main-color);
+    width: max-content;
+    padding: 0.5rem 2rem 0.5rem 0;
+    font-weight: 200;
+    color: var(--main-color);
   }
   

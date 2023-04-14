@@ -9,7 +9,7 @@ Trang chủ
 @endsection
 
 @section('content')
-  <div class="homepage">
+  <div class="homepage" id="home-page">
     <div class="homepage-inner">
       <div class="banner-parent">
         <div class='slider'>
@@ -101,14 +101,17 @@ Trang chủ
             />
           </div>
         </div>
-
-        <div class='wrap-search-product'>
-          <div class='search-product'>
-            <input type='text' placeholder="Tìm kiếm sản phẩm sơn" />
-            <img alt='icon-search' src="{{ asset('images/icons/ic-search.svg') }}" />
+        <form class='form-search-paint' action="{{ URL::route('action-search') }}" method="POST">
+          {{ csrf_field() }}
+          <div class='wrap-search-product'>
+            <div class='search-product'>
+                <input type='text' name='paint-name' placeholder="Tìm kiếm sản phẩm sơn" />
+                <img alt='icon-search' src="{{ asset('images/icons/ic-search.svg') }}" />
+              </form>
+            </div>
+            <button type='submit'>Tìm</button>
           </div>
-          <button>Tìm</button>
-        </div>
+        </form>
 
         @foreach($paints as $key => $paint)
           {{-- group slider --}}
@@ -137,7 +140,7 @@ Trang chủ
                             src="{{ $paintProduct->image('thumbnail', 'default') }}"
                           />
                         </div>
-                        <a href="#" class="sn-alex-ngoi4" title="{{ $paintProduct->title }}">
+                        <a href="{{ URL::route('paint-detail', ['id' => $paintProduct->id, 'slug' => $paintProduct->slug]) }}" class="sn-alex-ngoi4" title="{{ $paintProduct->title }}">
                           {{ $paintProduct->title }}
                         </a>
                         <div class='product-specifications-color'>
@@ -150,156 +153,6 @@ Trang chủ
                       </div>
                     </div>
                   @endforeach
-                  {{-- <div class="product-list__item slide">
-                    <div class="product frame-parent44 ">
-                      <div class="rectangle-parent11">
-                        <img
-                          class="frame-child12"
-                          alt=""
-                          src="./public/rectangle-74@2x.png"
-                        />
-                        <div class="ellipse-parent2">
-                          <img
-                            class="frame-child13"
-                            alt=""
-                            src="./public/ellipse-24.svg"
-                          />
-                          <div class="kg4">45 kg</div>
-                        </div>
-                      </div>
-                      <div class="sn-alex-ngoi4">
-                        Sơn Alex ngoại thất chống nóng hiệu quả
-                      </div>
-                      <div class="frame4">
-                        <div class="logo10">1.000.000 vnđ</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class=" product-list__item slide">
-                    <div class="product frame-parent44">
-                      <div class="rectangle-parent11">
-                        <img
-                          class="frame-child12"
-                          alt=""
-                          src="./public/rectangle-74@2x.png"
-                        />
-                        <div class="ellipse-parent2">
-                          <img
-                            class="frame-child13"
-                            alt=""
-                            src="./public/ellipse-24.svg"
-                          />
-                          <div class="kg4">45 kg</div>
-                        </div>
-                      </div>
-                      <div class="sn-alex-ngoi4">
-                        Sơn Alex ngoại thất chống nóng hiệu quả
-                      </div>
-                      <div class="frame4">
-                        <div class="logo10">1.000.000 vnđ</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class=" product-list__item slide">
-                    <div class="product frame-parent44">
-                      <div class="rectangle-parent11">
-                        <img
-                          class="frame-child12"
-                          alt=""
-                          src="./public/rectangle-74@2x.png"
-                        />
-                        <div class="ellipse-parent2">
-                          <img
-                            class="frame-child13"
-                            alt=""
-                            src="./public/ellipse-24.svg"
-                          />
-                          <div class="kg4">45 kg</div>
-                        </div>
-                      </div>
-                      <div class="sn-alex-ngoi4">
-                        Sơn Alex ngoại thất chống nóng hiệu quả
-                      </div>
-                      <div class="frame4">
-                        <div class="logo10">1.000.000 vnđ</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-list__item slide">
-                    <div class="product frame-parent44 ">
-                      <div class="rectangle-parent11">
-                        <img
-                          class="frame-child12"
-                          alt=""
-                          src="./public/rectangle-74@2x.png"
-                        />
-                        <div class="ellipse-parent2">
-                          <img
-                            class="frame-child13"
-                            alt=""
-                            src="./public/ellipse-24.svg"
-                          />
-                          <div class="kg4">45 kg</div>
-                        </div>
-                      </div>
-                      <div class="sn-alex-ngoi4">
-                        Sơn Alex ngoại thất chống nóng hiệu quả
-                      </div>
-                      <div class="frame4">
-                        <div class="logo10">1.000.000 vnđ</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class=" product-list__item slide">
-                    <div class="product frame-parent44">
-                      <div class="rectangle-parent11">
-                        <img
-                          class="frame-child12"
-                          alt=""
-                          src="./public/rectangle-74@2x.png"
-                        />
-                        <div class="ellipse-parent2">
-                          <img
-                            class="frame-child13"
-                            alt=""
-                            src="./public/ellipse-24.svg"
-                          />
-                          <div class="kg4">45 kg</div>
-                        </div>
-                      </div>
-                      <div class="sn-alex-ngoi4">
-                        Sơn Alex ngoại thất chống nóng hiệu quả
-                      </div>
-                      <div class="frame4">
-                        <div class="logo10">1.000.000 vnđ</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class=" product-list__item slide">
-                    <div class="product frame-parent44">
-                      <div class="rectangle-parent11">
-                        <img
-                          class="frame-child12"
-                          alt=""
-                          src="./public/rectangle-74@2x.png"
-                        />
-                        <div class="ellipse-parent2">
-                          <img
-                            class="frame-child13"
-                            alt=""
-                            src="./public/ellipse-24.svg"
-                          />
-                          <div class="kg4">45 kg</div>
-                        </div>
-                      </div>
-                      <div class="sn-alex-ngoi4">
-                        Sơn Alex ngoại thất chống nóng hiệu quả
-                      </div>
-                      <div class="frame4">
-                        <div class="logo10">1.000.000 vnđ</div>
-                      </div>
-                    </div>
-                  </div> --}}
                 </div>
               
                 <div class='wrap-navigate-slide'>
@@ -422,18 +275,20 @@ Trang chủ
                 </div>
               </div>
             </div>
-            <div class="xem-thm-parent">
-              <div class="xem-thm">Xem thêm</div>
-              <img
-                class="arrow-right-icon"
-                alt=""
-                src="{{ asset('images/icons/ic-view-more.svg') }}"
-              />
+            <div>
+              <a class="xem-thm-parent" href="{{ URL::route('projects') }}">
+                <div class="xem-thm">Xem thêm</div>
+                <img
+                  class="arrow-right-icon"
+                  alt=""
+                  src="{{ asset('images/icons/ic-view-more.svg') }}"
+                />
+              </a>
             </div>
           </div>
         </div>
       </div>
-      <div class="polygon-parent">
+      <div class="polygon-parent" id="paint-price-table">
         <div class='price-table-content'>
           <h3>Với kinh nghiệm 10 năm trong nghề</h3>
           <p>Sứ mệnh của chúng tôi là đem đến sự hài lòng tuyệt đối cho khách hàng</p>
@@ -447,12 +302,8 @@ Trang chủ
                     <div class="cc-loi-sn-jotun-wrapper">
                       <div class="cc-loi-sn">Bảng giá thi công thạch cao</div>
                     </div>
-                    
                   </div>
                   
-                  {{-- <div class="bng-bo-gi">
-                    Bảng báo giá thi công sơn và trần thạch cao
-                  </div> --}}
                 </div>
                 <img
                   class="baogia1-1-icon"
@@ -481,6 +332,10 @@ Trang chủ
       </div>
     </div>
   </div>
+
+  <a id='btn-to-top' class="btn-to-top" onclick="scrollToTop()">
+    <img alt='icon-to-top' src="{{ asset('images/icons/ic-arrow-up.svg') }}" />
+  </a>
 @endsection
 
 @section('script')
