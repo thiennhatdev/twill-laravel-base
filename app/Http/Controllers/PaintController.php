@@ -16,6 +16,9 @@ class PaintController extends Controller
     public function detail() 
     {
         $paints = $this->paintRepository->paintDetail($this->request->id);
+        if (empty($paints)) {
+            return redirect()->route('404');
+        }
         $related_paints = $this->paintRepository->relatedPaintsByPaintId($this->request->id);
         return view('pages.paint-detail', [
             'paints' => $paints,

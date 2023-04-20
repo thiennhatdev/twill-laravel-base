@@ -34,11 +34,14 @@
         </div>
       </div>
       <div class="rectangle-parent9">
-        <img
-          class="frame-child10"
-          alt="{{ $paint->title }}"
-          src="{{ $paint->image('thumbnail', 'default') }}"
-        />
+        <div class='wrap-img-product'>
+          <img
+            class="frame-child10"
+            alt="{{ $paint->title }}"
+            src="{{ $paint->image('thumbnail', 'default') }}"
+          />
+        </div>
+        
         <div class="thongtin-sanpham">
           <div class="vn">
             <span class="tn-sn-phm">Tên sản phẩm: </span
@@ -76,31 +79,33 @@
       </div>
       <div class="paint-detail-content-child"></div>
       
-      <div class="sp-cungloai">
-        <div class="title-sp-cungloai1">
-          <div class="cc-sn-phm1">Các sản phẩm cùng loại</div>
-        </div>
-        <div class="sp-cungloai-inner">
-          <div class="instance-group">
-            @foreach($related_paints as $product)
-              <div class="frame-parent33">
-                <div class="rectangle-parent5">
-                  <img
-                    class="frame-child3"
-                    alt="{{ $product->title }}"
-                    src="{{ $product->image('thumbnail', 'default') }}"
-                  />
+      @if(count($related_paints))
+        <div class="sp-cungloai">
+          <div class="title-sp-cungloai1">
+            <div class="cc-sn-phm1">Các sản phẩm cùng loại</div>
+          </div>
+          <div class="sp-cungloai-inner">
+            <div class="instance-group">
+              @foreach($related_paints as $product)
+                <div class="frame-parent33">
+                  <div class="rectangle-parent5">
+                    <img
+                      class="frame-child3"
+                      alt="{{ $product->title }}"
+                      src="{{ $product->image('thumbnail', 'default') }}"
+                    />
+                  </div>
+                  <div class="sn-alex-ngoi">
+                    <a href="{{ URL::route('paint-detail', ['id' => $product->id, 'slug' => $product->slug]) }}" title="{{ $product->title }}">
+                      {{ $product->title }}
+                    </a>
+                  </div>
                 </div>
-                <div class="sn-alex-ngoi">
-                  <a href="{{ URL::route('paint-detail', ['id' => $product->id, 'slug' => $product->slug]) }}" title="{{ $product->title }}">
-                    {{ $product->title }}
-                  </a>
-                </div>
-              </div>
-            @endforeach
+              @endforeach
+            </div>
           </div>
         </div>
-      </div>
+      @endif
     </div>
     <div class="paint-detail-child"></div>
   </div>

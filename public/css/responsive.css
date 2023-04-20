@@ -16,10 +16,6 @@
     .homepage .homepage-inner {
         margin-top: 2rem;
     }
-    .banner .banner-content {
-        width: 50%;
-        left: 4.56rem;
-    }
     .i-l-phn-container {
         font-size: 2rem;
     }
@@ -58,11 +54,11 @@
     .rectangle-parent9 .frame-child10 {
         width: 200px;
     }
-    .sp-cungloai-inner .instance-group {
-        grid-template-columns: auto auto auto;
+    .instance-group .frame-parent33 {
+        width: calc((100% - var(--gap-search-list) * 2) / 3)
     }
-    .search-outer .wrap-search {
-        grid-template-columns: auto auto auto;
+    .wrap-search .product-list__item  {
+        width: calc((100% - var(--gap-search-list) * 2) / 3);
     }
     
 }
@@ -73,15 +69,9 @@
         --font-size-5xl: 1.25rem;
         --margin-top-footer: 30px;
         --breadcrum-top: 30px;
-    } 
+    }
     .bo-gi-thi-cng-sn-wrapper3 {
         padding: 0.2rem 1rem;
-    }
-    .slider .banner {
-        height: 19.31rem;
-    }
-    .banner-content .i-l-phn-container {
-        font-size: 1.5rem;
     }
     .banner-parent .wrap-search-product {
         justify-content: center;
@@ -169,18 +159,18 @@
     .rectangle-parent .component-child {
         height: 14rem;
     }
-    .sp-cungloai-inner .instance-group {
-        grid-template-columns: auto auto;
+    .instance-group .frame-parent33 {
+        width: calc((100% - var(--gap-search-list)) / 2)
     }
-    .search-outer .wrap-search {
-        grid-template-columns: auto auto;
+    .wrap-search .product-list__item  {
+        width: calc((100% - var(--gap-search-list)) / 2);
     }
 }
 @media all and (max-width: 576px) {  
     :root { 
         --padding-side: 20px;
         --font-size-5xl: 1rem;
-    } 
+    }
     .top-menu5 {
         justify-content: flex-end;
     }
@@ -190,29 +180,11 @@
     .frame-parent43 {
         display: none;
     }
-    .slider .banner {
-        height: 16.31rem;
-    }
     .cung-cp-sn {
         font-size: 0.8rem;
     }
-    .slider .banner-arrow {
-        padding: 0 1rem;
-    }
-    .banner .banner-content {
-        left: 11%;
-        padding: 1rem 1.5rem;
-        width: 64%;
-    }
     .homepage .homepage-inner {
         margin-top: 20px;
-    }
-    .bn-ang-cn {
-        font-size: 2rem;
-    }
-    .bn-ang-cn-sn-nh-parent .lin-h-ngay-container {
-        height: 2rem;
-        padding: 0.5rem 1.5rem;
     }
     .cc-loi-sn-jotun-wrapper .cc-loi-sn-1 {
         font-size: 1.2rem;
@@ -260,10 +232,6 @@
     }
     .rectangle-parent9 .frame-child10 {
         width: 50%;
-    }
-    .sp-cungloai-inner .instance-group {
-        flex-direction: column;
-        align-items: center;
     }
     .component-parent .rectangle-parent {
         flex-direction: column;
@@ -322,39 +290,21 @@
     .result-empty {
         font-size: 1.5rem;
     }
-    .search-outer .wrap-search {
-        grid-template-columns: auto;
-    }
 }
 
 @media all and (max-width: 440px) { 
     :root { 
         --padding-side: 14px;
         --breadcrum-top: 28px;
-    } 
+    }
     .menu5 {
         align-items: center;
     }
     .logo-header {
         font-size: 2rem;
     }
-    .banner-arrow .banner-arrow-child {
-        height: 1.51rem;
-    }
-    .banner .banner-content {
-        width: 77%;
-    }
-    .slider .banner-arrow {
-        padding: 0 0.5rem;
-    }
     .paint-category-title {
         padding: 0 0.5rem;
-    }
-    .bn-ang-cn-sn-nh-parent .bn-ang-cn {
-        font-size: 1.5rem;
-    }
-    .frame-wrapper7 .rectangle-parent30 {
-        height: 15.13rem;
     }
     .rectangle-parent10-inner .paint-category-title {
         padding: 0 0.3rem;
@@ -372,7 +322,10 @@
         padding: 0.5rem 1rem;
     }
     .group-parent5 .instance-container {
-        height: 16.88rem;
+        height: 15.88rem;
+    }
+    .group-parent5 .rectangle-parent11, .sn-alex-ngoi4 {
+        height: 7.69rem;
     }
     .carousel .carousel-content {
         height: 100%;
@@ -399,7 +352,10 @@
     .rectangle-parent9 .frame-child10 {
         height: 200px;
     }
-    .sp-cungloai-inner .instance-group {
-        grid-template-columns: auto;
+    .instance-group .frame-parent33 {
+        width: 100%;
+    }
+    .wrap-search .product-list__item  {
+        width: 100%;
     }
 }

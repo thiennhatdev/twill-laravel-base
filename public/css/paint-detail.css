@@ -70,11 +70,13 @@
     flex-direction: column;
     justify-content: flex-start;
     gap: var(--gap-9xs);
+    width: calc((100% - var(--gap-search-list) * 3) / 4)
   }
   .instance-group {
     width: 100%;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+    display: flex;
+    gap: var(--gap-search-list);
+    flex-wrap: wrap;
   }
   .sp-cungloai-inner {
     width: calc(100% - 0.02px);
@@ -157,10 +159,11 @@
   }
   .frame-child10 {
     position: relative;
-    width: 30%;
-    height: 300px;
+    height: 200px;
     flex-shrink: 0;
     object-fit: contain;
+    margin: 0 auto;
+    display: block;
   }
   .tn-sn-phm {
     font-weight: 600;
@@ -180,12 +183,17 @@
     justify-content: flex-start;
     gap: 1.88rem;
     width: 100%;
+    flex: 1;
   }
   .rectangle-parent9 {
     flex-direction: row;
     gap: 2.69rem;
     max-width: var(--maxwidth-1200);
     margin: 0 auto;
+  }
+  .rectangle-parent9 .wrap-img-product{
+    background: url('/images/bg-product.svg') 100% 100%;
+    width: 300px;
   }
   .crumb-child1 {
     align-self: stretch;

@@ -61,6 +61,9 @@
   .logo10 {
     position: relative;
   }
+  .logo10 {
+    color: #fff;
+  }
   .bo-gi-thi-cng-sn-wrapper3 {
     border-radius: var(--br-9xs);
     background-color: var(--red);

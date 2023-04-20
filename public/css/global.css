@@ -18,9 +18,11 @@ body {
 
   /* Colors */
   --color-white: #fff;
-  --main-blue: #003A6F;
+  --main-blue: #0350AE;
+  --main-blue-2: #003A6F;
   --main-blue-2: #336699;
   --red: #FF5959;
+  --main-color-2: #5BDDE4;
   --main-color: #6EC5E9;
   --color-black: #000;
   --light-silver-bold: #eff1f2;
@@ -42,6 +44,7 @@ body {
   --gap-base: 1rem;
   --gap-9xs: 0.25rem;
   --gap-39xl: 1.4rem;
+  --gap-search-list: 20px;
 
   /* Paddings */
   --padding-83xl: 6.38rem;

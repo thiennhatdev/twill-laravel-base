@@ -12,95 +12,14 @@ Trang chủ
   <div class="homepage" id="home-page">
     <div class="homepage-inner">
       <div class="banner-parent">
-        <div class='slider'>
-          <div class="banner slide-inner">
-            <div>
-              <div class="banner-thumbnail">
-                <img
-                  class="banner-thumbnail-child"
-                  alt=""
-                  src="{{ asset('images/paint-banner.png') }}"
-                />
-              </div>
-              <div class="banner-content">
-                <div class="i-l-phn-container">
-                  <p class="i-l-phn">ĐẠI LÝ PHÂN PHỐI</p>
-                  <p class="i-l-phn">SƠN JOTUN</p>
-                </div>
-                <div class="cung-cp-sn">
-                  Cung cấp sơn chính hãng uy tín lớn nhất tại miền trung Cung cấp
-                  sơn chính hãng uy tín lớn nhất tại miền trung
-                </div>
-                <div class="banner-content-inner">
-                  <div class="lin-h-ngay-wrapper">
-                    <div class="lin-h-ngay">LIÊN HỆ NGAY</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="banner-thumbnail">
-                <img
-                  class="banner-thumbnail-child"
-                  alt=""
-                  src="{{ asset('images/paint-banner.png') }}"
-                />
-              </div>
-              <div class="banner-content">
-                <div class="i-l-phn-container">
-                  <p class="i-l-phn">ĐẠI LÝ PHÂN PHỐI</p>
-                  <p class="i-l-phn">SƠN JOTUN</p>
-                </div>
-                <div class="cung-cp-sn">
-                  Cung cấp sơn chính hãng uy tín lớn nhất tại miền trung Cung cấp
-                  sơn chính hãng uy tín lớn nhất tại miền trung
-                </div>
-                <div class="banner-content-inner">
-                  <div class="lin-h-ngay-wrapper">
-                    <div class="lin-h-ngay">LIÊN HỆ NGAY</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="banner-thumbnail">
-                <img
-                  class="banner-thumbnail-child"
-                  alt=""
-                  src="{{ asset('images/paint-banner.png') }}"
-                />
-              </div>
-              <div class="banner-content">
-                <div class="i-l-phn-container">
-                  <p class="i-l-phn">ĐẠI LÝ PHÂN PHỐI</p>
-                  <p class="i-l-phn">SƠN JOTUN</p>
-                </div>
-                <div class="cung-cp-sn">
-                  Cung cấp sơn chính hãng uy tín lớn nhất tại miền trung Cung cấp
-                  sơn chính hãng uy tín lớn nhất tại miền trung
-                </div>
-                <div class="banner-content-inner">
-                  <div class="lin-h-ngay-wrapper">
-                    <div class="lin-h-ngay">LIÊN HỆ NGAY</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="banner-arrow">
-            <img
-              id="prev"
-              class="banner-arrow-child icon-arrow_back"
-              alt="icon-arrow-left"
-              src="{{ asset('images/icons/ic-arrow-left.svg') }}"
-            /><img
-              id="next"
-              class="banner-arrow-child icon-arrow_forward"
-              alt="icon-arrow-right"
-              src="{{ asset('images/icons/ic-arrow-right.svg') }}"
-            />
-          </div>
+        <div class="img-comp-container">
+          <picture>
+            <source media="(min-width:576px)" srcset="{{ asset('images/bg-banner.svg') }}">
+            <source media="(min-width:280px)" srcset="{{ asset('images/bg-banner-mobile.webp') }}">
+            <img src="{{ asset('images/bg-banner.svg') }}" alt="màu nha dep">
+          </picture>
         </div>
+        
         <form class='form-search-paint' action="{{ URL::route('action-search') }}" method="POST">
           {{ csrf_field() }}
           <div class='wrap-search-product'>
@@ -182,24 +101,11 @@ Trang chủ
           </div>
         </div>
         <div class="frame-wrapper7">
-          <div class="rectangle-parent30">
-            <img
-              class="frame-child44"
-              alt="son-nha-gia-re"
-              src="{{ asset('images/banner2.jpeg') }}"
-            />
-            <div class="bn-ang-cn-sn-nh-parent">
-              <div class="bn-ang-cn">Bạn đang cần sơn nhà ?</div>
-              <img
-                class="frame-child45"
-                alt="son-nha-gia-re"
-                src="{{ asset('images/icons/ic-finger-down.svg') }}"
-              />
-              <div class="lin-h-ngay-container">
-                <div class="lin-h-ngay1">LH: 0705.550.553</div>
-              </div>
-            </div>
-          </div>
+          <picture>
+            <source media="(min-width:576px)" srcset="{{ asset('images/bg-banner-middle.webp') }}">
+            <source media="(min-width:320px)" srcset="{{ asset('images/bg-banner-middle-mobile.svg') }}">
+            <img src="{{ asset('images/bg-banner-middle.webp') }}" alt="Flowers">
+          </picture>
         </div>
       </div>
     </div>
@@ -210,7 +116,7 @@ Trang chủ
           <div class="instance-parent4">
             <div class="frame-parent60">
               <div class="cc-loi-sn-jotun-wrapper">
-                <div class="cc-loi-sn-1">Hình ảnh thi công thực tế</div>
+                <div class="cc-loi-sn-1">Dự án đã hoàn thành</div>
               </div>
             </div>
             <div class="mt-s-hnh">
@@ -290,7 +196,7 @@ Trang chủ
       </div>
       <div class="polygon-parent" id="paint-price-table">
         <div class='price-table-content'>
-          <h3>Với kinh nghiệm 10 năm trong nghề</h3>
+          <h3>Báo giá</h3>
           <p>Sứ mệnh của chúng tôi là đem đến sự hài lòng tuyệt đối cho khách hàng</p>
         </div>
         <div class="frame-wrapper8">

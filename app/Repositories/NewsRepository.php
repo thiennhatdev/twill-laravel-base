@@ -23,27 +23,28 @@ class NewsRepository extends ModuleRepository
     public function allNews()
     {
         $allNews = $this->model
-                ->published() 
-                ->get()
-                ->toQuery()
-                ->paginate(10);  
+            ->published() 
+            ->get()
+            ->toQuery()
+            ->paginate(10);  
         return $allNews;
     }
 
     public function newsDetail($id)
     {
         $news = News::where('id', $id)
-                ->published() 
-                ->first();
+            ->published() 
+            ->first();
         return $news;
     }
 
-    public function recentNews()
+    public function recentNews($news_id)
     {
         $recent_news = $this->model
-        ->published() 
-        ->get()
-        ->take(5);
+            ->where('news.id', '!=', $news_id)
+            ->published() 
+            ->get()
+            ->take(5);
         return $recent_news;
     }
 }

@@ -189,53 +189,6 @@ showPaintGroupSlider('parent-carasel-3');
 showPaintGroupSlider('parent-carasel-4');
 showPaintGroupSlider('parent-carasel-5');
 
-// slider banner
-
-let slidesBanner = document.querySelectorAll('.slide-inner>div');
-let slideSayisi = slidesBanner.length;
-
-let prev = document.getElementById('prev');
-let next = document.getElementById('next');
-
-for (let index = 0; index < slidesBanner.length; index++) {
-    const element = slidesBanner[index];
-    // element.style.display = "block";
-    element.style.transform = "translateX("+100*(index)+"%)";
-}
-let loop = 0 + 1000*slideSayisi;
-
-function goNext(){
-    loop++;
-    for (let index = 0; index < slidesBanner.length; index++) {
-        const element = slidesBanner[index];
-        // element.style.display = "block";
-        element.style.transform = "translateX("+100*(index-loop%slideSayisi)+"%)";
-    }
-}
-
-function goPrev(){
-    loop--;
-    for (let index = 0; index < slidesBanner.length; index++) {
-        const element = slidesBanner[index];
-        element.style.transform = "translateX("+100*(index-loop%slideSayisi)+"%)";
-    }
-}
-
-next.addEventListener('click',goNext);
-prev.addEventListener('click',goPrev);
-
-document.addEventListener('keydown',function(e){
-    if(e.code === 'ArrowRight'){
-        goNext();
-    }else if(e.code === 'ArrowLeft'){
-        goPrev();
-    }
-});
-
-setInterval(() => {
-    goNext();
-}, 6000);
-
 // back to top
 window.onscroll = () => {
   toggleTopButton();
@@ -253,4 +206,3 @@ function toggleTopButton() {
   }
 }
 // back to top
-

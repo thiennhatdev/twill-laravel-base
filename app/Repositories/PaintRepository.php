@@ -51,24 +51,32 @@ class PaintRepository extends ModuleRepository
 
     public function paintDetail($id)
     {
-        $paint = Paint::where('id', $id)
-                ->where('deleted_at', '=', null)
-                ->first()
-                ->leftJoin('paint_categories', 'paints.paint_categories_id', '=', 'paint_categories.id')
-                ->select('paints_items.*', 'paints.*', 'paint_categories.title as categoriesName')
-                ->rightJoin('paints_items', 'paints.id', '=', 'paints_items.paint_id')
-                ->where('paint_id', '=', $id)
-                ->get();
-        return $paint;
+        $paint = Paint::where('paints.id', $id)
+                ->where('paints.deleted_at', '=', null)
+                ->published()
+                ->first();
+                
+        if (isset($paint)) {
+            $paint = $paint->leftJoin('paint_categories', 'paints.paint_categories_id', '=', 'paint_categories.id')
+            ->select('paints_items.*', 'paints.*', 'paint_categories.title as categoriesName')
+            ->rightJoin('paints_items', 'paints.id', '=', 'paints_items.paint_id')
+            ->where('paint_id', '=', $id)
+            ->get();
+        }
+
+        return  $paint;
     }
 
     public function relatedPaintsByPaintId($id)
     {
         $paint_categories_id = Paint::where('id', $id)
                 ->where('deleted_at', '=', null)
+                ->published()
                 ->first()
                 ->paint_categories_id;
         $related_paints = Paint::where('paint_categories_id', $paint_categories_id)
+                ->where('paints.id', '!=', $id)
+                ->published()
                 ->leftJoin('paint_categories', 'paints.paint_categories_id', '=', 'paint_categories.id')
                 ->select('paints.*', 'paint_categories.title as categoriesName')                        
                 ->get();
