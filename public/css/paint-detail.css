@@ -159,11 +159,12 @@
   }
   .frame-child10 {
     position: relative;
-    height: 200px;
     flex-shrink: 0;
     object-fit: contain;
     margin: 0 auto;
     display: block;
+    top: -15px;
+    width: 57%;
   }
   .tn-sn-phm {
     font-weight: 600;
@@ -192,8 +193,12 @@
     margin: 0 auto;
   }
   .rectangle-parent9 .wrap-img-product{
-    background: url('/images/bg-product.svg') 100% 100%;
-    width: 300px;
+    background: url(/images/bg-product.svg);
+    width: 350px;
+    margin-top: 40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
   }
   .crumb-child1 {
     align-self: stretch;

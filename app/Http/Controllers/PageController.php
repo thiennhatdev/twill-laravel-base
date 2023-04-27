@@ -26,6 +26,7 @@ class PageController extends Controller
     }
 
     public function action_search() {
+        // dd('gg');
         // $this->request->session()->put('search', $this->request->input('input-search'));
         return redirect('tim-kiem/' . str_replace(' ', '-', $this->request->input('paint-name')) . '.html');
     }

@@ -38,7 +38,7 @@
           <img
             class="frame-child10"
             alt="{{ $paint->title }}"
-            src="{{ $paint->image('thumbnail', 'default') }}"
+            src="{{ $paint->image('thumbnail', 'default', ['fm' => 'png']) }}"
           />
         </div>
         

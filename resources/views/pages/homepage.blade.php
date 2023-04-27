@@ -56,7 +56,7 @@ Trang chủ
                           <img
                             class="frame-child12"
                             alt="{{ $paintProduct->title }}"
-                            src="{{ $paintProduct->image('thumbnail', 'default') }}"
+                            src="{{ $paintProduct->image('thumbnail', 'default', ['fm' => 'png']) }}"
                           />
                         </div>
                         <a href="{{ URL::route('paint-detail', ['id' => $paintProduct->id, 'slug' => $paintProduct->slug]) }}" class="sn-alex-ngoi4" title="{{ $paintProduct->title }}">
