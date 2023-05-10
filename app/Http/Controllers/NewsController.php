@@ -26,10 +26,17 @@ class NewsController extends Controller
         if (empty($news_detail)) {
             return redirect()->route('404');
         }
+
+        $markupFixer  = new \TOC\MarkupFixer();
+        $tocGenerator = new \TOC\TocGenerator();
+        $body = $markupFixer->fix($news_detail->renderBlocks());
+        $menu = $tocGenerator->getHtmlMenu($body);
         $recent_news = $this->newsRepository->recentNews($this->request->id);
         return view('pages.news-detail', [
             'news_detail' => $news_detail,
-            'recent_news' => $recent_news
+            'recent_news' => $recent_news,
+            'body' => $body,
+            'menu' => $menu
         ]);
     }
 }

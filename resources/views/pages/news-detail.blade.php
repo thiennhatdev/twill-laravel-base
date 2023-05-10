@@ -44,8 +44,11 @@
             <div class="cng-ngh-cht">
               {{ $news_detail->title }}
             </div>
+            <div class='table-of-content'>
+              {!! $menu !!}
+            </div>
             <div class="tashield-l-mt-container">
-              {!! $news_detail->renderBlocks() !!}
+              {!! $body !!}
             </div>
           </div>
         </div>

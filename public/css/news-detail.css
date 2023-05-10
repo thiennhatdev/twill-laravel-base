@@ -34,6 +34,12 @@
     line-height: 134.02%;
     font-weight: 600;
   }
+  .table-of-content>ul {
+    padding: 2rem;
+    background: #ebedf0;
+    border-radius: 4px;
+    font-size: var(--font-size-xl);
+  }
   .b-su-tp {
     text-decoration: underline;
   }
@@ -65,7 +71,7 @@
   }
   .cng-ngh-cht-to-mu-tin-ti-parent {
     align-self: stretch;
-    gap: 3rem;
+    gap: 2rem;
   }
   .news-detail-content-inner {
     flex: 1;

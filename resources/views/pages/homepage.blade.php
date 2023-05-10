@@ -1,4 +1,4 @@
-@extends('layouts.default')
+<!-- @extends('layouts.default')
 
 @section('title')
 Trang chủ
@@ -250,4 +250,4 @@ Trang chủ
 
 
 
-
+ -->
