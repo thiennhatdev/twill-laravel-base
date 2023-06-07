@@ -67,6 +67,9 @@
   font-size: var(--font-size-xl);
   color: var(--color-white);
 }
+.khuyn-mi-parent3 a {
+  color: var(--color-white);
+}
 .h-tr-parent3 {
   height: 8.56rem;
   gap: var(--gap-xl);
@@ -111,7 +114,7 @@
   min-width: 250px;
   height: max-content;
 }
-.bqsoft5 {
+.bqsoft5 a {
   color: var(--red);
 }
 .website-c-thit-k-bi-cty-wrapper3 {

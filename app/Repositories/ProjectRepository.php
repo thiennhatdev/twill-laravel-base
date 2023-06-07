@@ -21,11 +21,20 @@ class ProjectRepository extends ModuleRepository
 
     public function allProjects() 
     {
-        return $this->model
-        ->published()
-        ->orderBy('title')
-        ->get()
-        ->toQuery()
-        ->paginate(10);
+        $isExist = $this->model->exists();
+        if($isExist) 
+        {
+            $allNews = $this->model
+            ->published()
+            ->orderBy('title')
+            ->get()
+            ->toQuery()
+            ->paginate(10);  
+            return $allNews;
+        }
+        else 
+        {
+            return [];
+        }
     }
 }

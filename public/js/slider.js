@@ -1,11 +1,16 @@
 function showPaintGroupSlider(parentClass) {
+var carousel = document.querySelector(`.${parentClass}`);
+
+if (!carousel) {
+  return;
+}
     // slider product list
 var slideStringClass = `.${parentClass} .carousel-content .slide`;
 var caraselContentClass = `.${parentClass} .carousel-content`;
-var caraselClass = `.${parentClass}`;
+// var caraselClass = `.${parentClass}`;
+// var carousel = document.querySelector(caraselClass);
 var navRightClass = `.${parentClass} .nav-right`;
 var navLeftClass = `.${parentClass} .nav-left`;
-var carousel = document.querySelector(caraselClass);
 var carouselContent = document.querySelector(caraselContentClass);
 var slides = document.querySelectorAll(slideStringClass);
 var arrayOfSlides = Array.prototype.slice.call(slides);
@@ -188,6 +193,11 @@ showPaintGroupSlider('parent-carasel-2');
 showPaintGroupSlider('parent-carasel-3');
 showPaintGroupSlider('parent-carasel-4');
 showPaintGroupSlider('parent-carasel-5');
+showPaintGroupSlider('parent-carasel-6');
+showPaintGroupSlider('parent-carasel-7');
+showPaintGroupSlider('parent-carasel-8');
+showPaintGroupSlider('parent-carasel-9');
+showPaintGroupSlider('parent-carasel-10');
 
 // back to top
 window.onscroll = () => {

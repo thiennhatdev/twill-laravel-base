@@ -26,7 +26,7 @@
       </div>
       <div class="menu5">
         <a href="{{ URL::route('homepage') }}">
-          <b class="logo10 logo-header">LOGO</b>
+            <img class="logo" alt="son-nha-da-nang" src="{{ asset('images/logo-sonnhadanang.webp') }}" />
         </a>
         <div class="menu-inner4">
           <div class="frame-parent42">
@@ -44,7 +44,7 @@
                 />
                 <div class="h00-17h005">
                   <span>Địa chỉ</span>
-                  <span class="th-l-5">: {{ $about->address }}</span>
+                  <span class="th-l-5">: {{ $about->address ?? "" }}</span>
                 </div>
               </div>
               <div class="map-pin-parent3">
@@ -55,7 +55,7 @@
                 />
                 <div class="h00-17h005">
                   <span>Hotline</span
-                  ><span class="th-l-5">: {{ $about->phone_number }}</span>
+                  ><span class="th-l-5">: {{ $about->phone_number ?? "" }}</span>
                 </div>
               </div>
             </div>

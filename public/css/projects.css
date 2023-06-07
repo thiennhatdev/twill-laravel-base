@@ -106,6 +106,7 @@
     gap: var(--gap-21xl);
     max-width: var(--maxwidth-1200);
     margin: 0 auto;
+    line-height: 2rem;
   }
   .jotun-ngoi-tht {
     color: var(--main-color);

@@ -42,7 +42,7 @@
         <div class="news-detail-content-inner">
           <div class="cng-ngh-cht-to-mu-tin-ti-parent">
             <div class="cng-ngh-cht">
-              {{ $news_detail->title }}
+              <h1>{{ $news_detail->title }}</h1>
             </div>
             <div class='table-of-content'>
               {!! $menu !!}

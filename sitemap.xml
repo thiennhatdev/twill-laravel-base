@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/vendor/sitemap/styles/xml.xsl" type="text/xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+	<url>
+	<loc>http://localhost:8000</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-02-25T18:10:00+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://localhost:8000/tin-tuc/tin2-tin-tuc-123456.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2023-06-04T12:55:08+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://localhost:8000/son/sanpham4-nnnnnnn.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2023-05-31T14:49:24+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://localhost:8000/son/sanpham3-sdfsdfsdf.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2023-05-31T14:31:56+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://localhost:8000/son/sanpham2-sdfsdf.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2023-05-31T14:24:34+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://localhost:8000/son/sanpham1-majestic-bong-hoan-hao.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2023-05-09T00:45:44+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+</urlset>
+

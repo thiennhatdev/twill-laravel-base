@@ -1,4 +1,4 @@
-<!-- @extends('layouts.default')
+@extends('layouts.default')
 
 @section('title')
 Trang chủ
@@ -6,6 +6,14 @@ Trang chủ
 
 @section('head')
   <link href="{{ asset('/css/homepage.css') }}" rel="stylesheet" />
+
+  <meta name="description" content="Sơn nhà đà nẵng, sơn jotun chính hãng, thi công trần thạch cao tại đà nẵng, thi công sơn trọn gói tại đà nẵng">
+  <meta name="keywords" content="Sơn nhà đà nẵng, sơn jotun chính hãng, thi công trần thạch cao tại đà nẵng, thi công sơn trọn gói tại đà nẵng">
+  <meta name="author" content="Sơn nhà đà nẵng">
+  <meta property="og:title" content="Trang chủ">
+  <meta property="og:description" content="Sơn nhà đà nẵng, sơn jotun chính hãng, thi công trần thạch cao tại đà nẵng, thi công sơn trọn gói tại đà nẵng">
+  <!-- <meta property="og:image" content="URL hình ảnh đại diện"> -->
+  <meta property="og:url" content="{{ URL::route('homepage') }}">
 @endsection
 
 @section('content')
@@ -14,9 +22,9 @@ Trang chủ
       <div class="banner-parent">
         <div class="img-comp-container">
           <picture>
-            <source media="(min-width:576px)" srcset="{{ asset('images/bg-banner.svg') }}">
+            <source media="(min-width:576px)" srcset="{{ asset('images/bg-banner.webp') }}">
             <source media="(min-width:280px)" srcset="{{ asset('images/bg-banner-mobile.webp') }}">
-            <img src="{{ asset('images/bg-banner.svg') }}" alt="màu nha dep">
+            <img src="{{ asset('images/bg-banner.webp') }}" alt="màu nha dep">
           </picture>
         </div>
         
@@ -33,8 +41,8 @@ Trang chủ
         </form>
 
         @foreach($paints as $key => $paint)
-          {{-- group slider --}}
-          <div class="group-parent5">
+          <!-- group slider -->
+          <div class="group-parent5" id="{{ Str::slug($paint[0]->categoriesName) }}">
             <div class="vector-parent">
               <div class="rectangle-parent10">
                 <div class='rectangle-parent10-inner'>
@@ -86,25 +94,25 @@ Trang chủ
               </div>
             </div>
           </div>
-          {{-- group slider --}}
+           <!-- group slider -->
         @endforeach
        
         <div class='paint-appendix'>
           <div>
-            {{-- <img alt='star' src="{{ asset('images/icons/ic-star.svg') }}" /> --}}
+            <!-- <img alt='star' src="{{ asset('images/icons/ic-star.svg') }}" />  -->
             <p>* Bảng giá sơn đã bao gồm 10% thuế VAT & áp dụng cho sơn trắng.</p>
           </div>
           
           <div>
-            {{-- <img alt='star' src="{{ asset('images/icons/ic-star.svg') }}" /> --}}
+            <!-- <img alt='star' src="{{ asset('images/icons/ic-star.svg') }}" />  -->
             <p>* Sơn pha màu sẽ được tính theo giá thực tế dựa trên máy pha màu.</p>
           </div>
         </div>
         <div class="frame-wrapper7">
           <picture>
-            <source media="(min-width:576px)" srcset="{{ asset('images/bg-banner-middle.webp') }}">
-            <source media="(min-width:320px)" srcset="{{ asset('images/bg-banner-middle-mobile.svg') }}">
-            <img src="{{ asset('images/bg-banner-middle.webp') }}" alt="Flowers">
+            <source media="(min-width:576px)" srcset="{{ asset('images/bg-banner-middle-large.webp') }}">
+            <source media="(min-width:320px)" srcset="{{ asset('images/bg-banner-middle-mobile-small.webp') }}">
+            <img src="{{ asset('images/bg-banner-middle-large.webp') }}" alt="son-nha-da-nang">
           </picture>
         </div>
       </div>
@@ -129,29 +137,29 @@ Trang chủ
                 <img
                   class="frame-child46"
                   alt="thi-cong-son-tai-da-nang"
-                  src="{{ asset('images/thi-cong-son-tai-da-nang-1.jpg') }}"
+                  src="{{ asset('images/thi-cong-son-tai-da-nang-1.webp') }}"
                 />
                 <div class="frame-parent63">
                   <div class="rectangle-parent32">
                     <img
                       class="frame-child47"
                       alt="thi-cong-son-tai-da-nang"
-                      src="{{ asset('images/thi-cong-son-tai-da-nang-2.jpg') }}"
+                      src="{{ asset('images/thi-cong-son-tai-da-nang-2.webp') }}"
                     /><img
                       class="frame-child47"
                       alt="thi-cong-son-tai-da-nang"
-                      src="{{ asset('images/thi-cong-son-tai-da-nang-3.jpg') }}"
+                      src="{{ asset('images/thi-cong-son-tai-da-nang-3.webp') }}"
                     />
                   </div>
                   <div class="rectangle-parent32">
                     <img
                       class="frame-child46"
                       alt="thi-cong-son-tai-da-nang"
-                      src="{{ asset('images/thi-cong-son-tai-da-nang-4.jpg') }}"
+                      src="{{ asset('images/thi-cong-son-tai-da-nang-4.webp') }}"
                     /><img
                       class="frame-child46"
                       alt="thi-cong-son-tai-da-nang"
-                      src="{{ asset('images/thi-cong-son-tai-da-nang-5.jpg') }}"
+                      src="{{ asset('images/thi-cong-son-tai-da-nang-5.webp') }}"
                     />
                   </div>
                 </div>
@@ -161,22 +169,22 @@ Trang chủ
                   <img
                     class="frame-child47"
                     alt="thi-cong-son-tai-da-nang"
-                    src="{{ asset('images/thi-cong-son-tai-da-nang-6.jpg') }}"
+                    src="{{ asset('images/thi-cong-son-tai-da-nang-6.webp') }}"
                   /><img
                     class="frame-child47"
                     alt="thi-cong-son-tai-da-nang"
-                    src="{{ asset('images/thi-cong-son-tai-da-nang-1.jpg') }}"
+                    src="{{ asset('images/thi-cong-son-tai-da-nang-7.jpg') }}"
                   />
                 </div>
                 <div class="rectangle-parent34">
                   <img
                     class="frame-child47"
                     alt="thi-cong-son-tai-da-nang"
-                    src="{{ asset('images/thi-cong-son-tai-da-nang-2.jpg') }}"
+                    src="{{ asset('images/thi-cong-son-tai-da-nang-8.jpg') }}"
                   /><img
                     class="frame-child47"
                     alt="thi-cong-son-tai-da-nang"
-                    src="{{ asset('images/thi-cong-son-tai-da-nang-3.jpg') }}"
+                    src="{{ asset('images/thi-cong-son-tai-da-nang-9.jpg') }}"
                   />
                 </div>
               </div>
@@ -239,7 +247,7 @@ Trang chủ
     </div>
   </div>
 
-  <a id='btn-to-top' class="btn-to-top" onclick="scrollToTop()">
+  <a href="javascript:;" id='btn-to-top' class="btn-to-top" onclick="scrollToTop()">
     <img alt='icon-to-top' src="{{ asset('images/icons/ic-arrow-up.svg') }}" />
   </a>
 @endsection
@@ -250,4 +258,4 @@ Trang chủ
 
 
 
- -->
+

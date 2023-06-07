@@ -47,7 +47,9 @@ Danh sách tin
           @endforeach
         </div>
       </div>
-      @include('components.pagination.default', ['paginator' => $news, 'link_limit' => 10])
+      @if($news)
+        @include('components.pagination.default', ['paginator' => $news, 'link_limit' => 10])
+      @endif
     </div>
     <div class="news-list-child"></div>
   </div>

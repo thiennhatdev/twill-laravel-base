@@ -24,6 +24,6 @@ class AboutRepository extends ModuleRepository
     {
         return $this->model
         ->published()
-        ->get();
+        ->first();
     }
 }
