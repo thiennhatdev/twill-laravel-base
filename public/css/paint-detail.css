@@ -153,6 +153,7 @@
     color: var(--font-inherit);
     max-width: var(--maxwidth-1200);
     margin: var(--padding-83xl) auto;
+    line-height: 2rem;
   }
   .th-trng-vit-container li {
     list-style-type: inherit;

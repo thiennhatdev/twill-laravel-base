@@ -22,12 +22,20 @@ class NewsRepository extends ModuleRepository
 
     public function allNews()
     {
-        $allNews = $this->model
-            ->published() 
-            ->get()
-            ->toQuery()
-            ->paginate(10);  
-        return $allNews;
+        $isExist = $this->model->exists();
+        if($isExist) 
+        {
+            $allNews = $this->model
+                ->published() 
+                ->get()
+                ->toQuery()
+                ->paginate(10);  
+            return $allNews;
+        }
+        else 
+        {
+            return [];
+        }
     }
 
     public function newsDetail($id)

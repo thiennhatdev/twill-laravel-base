@@ -37,8 +37,8 @@ class PaintRepository extends ModuleRepository
     public function allPaintsWithCategory() 
     {
         return $this->model
-            ->rightJoin('paints_items','paints_items.paint_id','=','paints.id')
-            ->select('paints_items.*','paints.*')
+            ->leftJoin('paints_items','paints_items.paint_id','=','paints.id')
+            ->select('paints.*', 'paints_items.*')
             ->leftJoin('paint_categories', 'paints.paint_categories_id', '=', 'paint_categories.id')
             ->select('paints_items.*', 'paints.*', 'paint_categories.title as categoriesName')
             ->published()

@@ -60,7 +60,9 @@
     .wrap-search .product-list__item  {
         width: calc((100% - var(--gap-search-list) * 2) / 3);
     }
-    
+    .logo-parent3 {
+        align-items: center;
+    }
 }
 @media all and (max-width: 768px) {  
     :root { 
@@ -169,6 +171,9 @@
         flex-direction: column;
         align-items: center;
     }
+    .frame-parent8 .wrap-map {
+        width: 100%;
+    }
 }
 @media all and (max-width: 576px) {  
     :root { 
@@ -181,7 +186,7 @@
     .frame-parent41 {
         display: none;
     }
-    .frame-parent43 {
+    .map-pin-parent3:first-child {
         display: none;
     }
     .cung-cp-sn {
@@ -237,7 +242,7 @@
         flex-direction: column;
     }
     .component-parent .rectangle-parent:nth-child(2n) {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     .rectangle-parent .component-child {
         width: 100%;
@@ -289,6 +294,9 @@
     }
     .result-empty {
         font-size: 1.5rem;
+    }
+    .logo {
+        width: 6rem;
     }
 }
 
@@ -343,8 +351,8 @@
         height: 2rem;
     }
     .btn-phone-call {
-        width: 3rem;
-        height: 3rem;
+        width: 50px;
+        height: 50px;
     }
     .cty-trch-nhim-hu-hn-bqsoft-parent .cty-trch-nhim {
         font-size: 1.2rem;

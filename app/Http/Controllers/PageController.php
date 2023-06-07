@@ -18,7 +18,7 @@ class PageController extends Controller
     public function homepage() 
     {
         $projects = $this->projectRepository->allProjects();
-        $paints = $this->paintRepository->allPaintsWithCategory();
+        $paints = $this->paintRepository->allPaintsWithCategory(); 
         return view('pages.homepage', [
             'projects' => $projects,
             'paints' => $paints
@@ -26,8 +26,6 @@ class PageController extends Controller
     }
 
     public function action_search() {
-        // dd('gg');
-        // $this->request->session()->put('search', $this->request->input('input-search'));
         return redirect('tim-kiem/' . str_replace(' ', '-', $this->request->input('paint-name')) . '.html');
     }
 

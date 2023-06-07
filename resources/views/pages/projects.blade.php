@@ -52,7 +52,9 @@ Danh sách dự án
           </div>
         @endforeach
       </div>
-      @include('components.pagination.default', ['paginator' => $projects, 'link_limit' => 10])
+      @if($projects)
+        @include('components.pagination.default', ['paginator' => $projects, 'link_limit' => 10])
+      @endif
     </div>
   </div>
   

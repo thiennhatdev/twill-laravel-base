@@ -37,6 +37,14 @@
   .chuyn-phn-sn,
   .cty-trch-nhim {
     position: relative;
+    text-align: center;
+  }
+  .cty-trch-nhim,
+  .company-description {
+    color: var(--main-blue);
+  }
+  .company-description {
+    font-style: italic;
   }
   .cty-trch-nhim-hu-hn-bqsoft-parent {
     align-self: stretch;
@@ -75,8 +83,9 @@
     align-self: stretch;
     position: relative;
     flex-shrink: 0;
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-xl);
     font-family: var(--font-inherit);
+    line-height: 2rem;
   }
   .frame-parent9 {
     flex: 1;
@@ -85,6 +94,9 @@
     align-items: flex-end;
     justify-content: flex-start;
     gap: 2.75rem;
+  }
+  .wrap-map {
+    width: 40%;
   }
   .frame-item {
     position: relative;

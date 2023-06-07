@@ -32,7 +32,7 @@ class AppServiceProvider extends ServiceProvider
     {
         view()->composer('*', function ($view)
         {          
-            $view->with('about', $this->about->index() ? $this->about->index()[0] : null);
+            $view->with('about', $this->about->index() ? $this->about->index() : null);
         });
     }
 }
