@@ -768,8 +768,8 @@
   align-items: center;
   justify-content: center;
   position: fixed;
-  bottom: 2rem;
-  right: 2rem;
+  bottom: 24px;
+  right: 24px;
   background: var(--main-color);
   border-radius: 999px;
   cursor: pointer;

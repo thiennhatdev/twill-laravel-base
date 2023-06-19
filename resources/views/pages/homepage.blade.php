@@ -12,7 +12,7 @@ Trang chủ
   <meta name="author" content="Sơn nhà đà nẵng">
   <meta property="og:title" content="Trang chủ">
   <meta property="og:description" content="Sơn nhà đà nẵng, sơn jotun chính hãng, thi công trần thạch cao tại đà nẵng, thi công sơn trọn gói tại đà nẵng">
-  <!-- <meta property="og:image" content="URL hình ảnh đại diện"> -->
+  <meta property="og:image" content="{{ asset('images/anhbia-sonnhadanang.webp') }}">
   <meta property="og:url" content="{{ URL::route('homepage') }}">
 @endsection
 
