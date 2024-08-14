@@ -55,37 +55,13 @@ function removeWhitespace($buffer)
         <img alt='icon zalo' src="{{ asset('/images/img-zalo.png') }}"/>
     </a></div>
 
-    <!-- Messenger Plugin chat Code -->
-    <div id="fb-root"></div>
+    <!-- start chat messenger  -->
 
-    <!-- Your Plugin chat code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
+   <a href="https://m.me/421201775095904" target="_blank">
+        <img class="icon-messenger" alt="icon-mess" src="{{ asset('/images/icon-messenger.svg') }}" />
+    </a>
 
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "421201775095904");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v17.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
-
+    
     <!-- <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v16.0" nonce="ddMh2paa"></script> -->
 
     <!-- Google analytics -->

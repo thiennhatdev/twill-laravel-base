@@ -133,6 +133,16 @@ li {
   }
   /* style for button zalo */
 
+  .icon-messenger {
+	position: fixed;
+	z-index: 100;
+	bottom: 29px;
+	left: 1.6rem;
+	width: 60px;
+	height: 60px;
+  }
+  
+
 /* paginate */
 .pagination {
 	display: flex;
