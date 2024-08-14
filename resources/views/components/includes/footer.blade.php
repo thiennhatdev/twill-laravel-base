@@ -36,7 +36,7 @@
           </div>
           <div class="fanpage-parent3">
             <b class="fanpage5">FANPAGE</b>
-            <div class="fb-page" data-href="https://www.facebook.com/hoctusach" data-tabs="timeline" data-width="250" data-height="200" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/hoctusach" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/hoctusach">Học Từ Sách</a></blockquote></div>
+            <div class="fb-page" data-href="https://www.facebook.com/thachcaodanang/" data-tabs="timeline" data-width="" data-height="250" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/thachcaodanang/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/thachcaodanang/">Sơn Nhà Đà Nẵng</a></blockquote></div>
   
           </div>
         </div>

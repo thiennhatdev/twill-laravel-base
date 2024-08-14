@@ -35,7 +35,7 @@ li {
 	z-index: 99999;
 	position: fixed;
 	left: 2rem;
-    bottom: 2rem;
+    bottom: 179px;
     border: none;
 	background: #ec8b00;
 	width: 50px;
@@ -82,6 +82,66 @@ li {
 	  box-shadow: 0 4px 10px rgba(236, 139, 0, 0.2), 0 0 0 5px rgba(236, 139, 0, 0.2), 0 0 0 10px rgba(236, 139, 0, 0.2), 0 0 0 20px rgba(236, 139, 0, 0); } }
 
 /* style for phone call button */
+
+/* style for button zalo */
+
+.zalome {
+	position: fixed;
+	bottom: 100px;
+	left: 1.6rem;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	background-color: #004A7F;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: inline-block;
+	font-family: Arial;
+	font-size: 20px;  
+	text-align: center;  
+	text-decoration: none;
+  }
+  @-webkit-keyframes glowing {
+  0% { background-color: #004A7F; -webkit-box-shadow: 0 0 3px #004A7F; }
+  50% { background-color: #0094FF; -webkit-box-shadow: 0 0 10px #0094FF; }
+  100% { background-color: #004A7F; -webkit-box-shadow: 0 0 3px #004A7F; }
+  }
+  @-moz-keyframes glowing {
+  0% { background-color: #004A7F; -moz-box-shadow: 0 0 3px #004A7F; }
+  50% { background-color: #0094FF; -moz-box-shadow: 0 0 10px #0094FF; }
+  100% { background-color: #004A7F; -moz-box-shadow: 0 0 3px #004A7F; }
+  }
+  
+  @-o-keyframes glowing {
+  0% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+  50% { background-color: #0094FF; box-shadow: 0 0 10px #0094FF; }
+  100% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+  }
+  @keyframes glowing {
+  0% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+  50% { background-color: #0094FF; box-shadow: 0 0 10px #0094FF; }
+  100% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+  }
+  .zalome {
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
+  
+  }
+  /* style for button zalo */
+
+  .icon-messenger {
+	position: fixed;
+	z-index: 100;
+	bottom: 29px;
+	left: 1.6rem;
+	width: 60px;
+	height: 60px;
+  }
+  
 
 /* paginate */
 .pagination {

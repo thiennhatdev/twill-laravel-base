@@ -9,7 +9,10 @@
   <meta property="og:title" content="{{ $paint->title }}" />
   <meta property="og:description" content="{!! Str::words($paint->feature, 150)  !!}" />
   <meta property="og:site_name" content="{{ $paint->title }}" />
-
+  <meta property="og:title" content="{{ $paint->title }}">
+  <meta property="og:description" content="{!! Str::words($paint->feature, 150)  !!}">
+  <meta property="og:image" content="{{ $paint->image('thumbnail', 'default', ['fm' => 'png']) }}">
+  <meta property="og:url" content="{{ url()->current() }}">
   <link href="{{ asset('/css/paint-detail.css') }}" rel="stylesheet" />
 @endsection
 

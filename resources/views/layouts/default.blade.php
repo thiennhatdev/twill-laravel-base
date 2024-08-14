@@ -15,10 +15,11 @@ function removeWhitespace($buffer)
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@yield('title')</title>
-    <link rel="shortcut icon" href="{{ asset('/images/favicon.ico') }}" type="image/x-icon" />
+    <link rel="shortcut icon" href="{{ asset('/favicon.ico') }}" type="image/x-icon" />
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('/images/apple-touch-icon.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('/images/favicon-32x32.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('/images/favicon-16x16.png') }}">
+    <link rel="icon" type="image/png" sizes="48x48" href="{{ asset('/images/favicon-48x48.png') }}">
     <!-- <link rel="mask-icon" href="{{ asset('/images/ico/safari-pinned-tab.svg') }}" color="#5bbad5"> -->
     <link
       rel="stylesheet"
@@ -41,12 +42,6 @@ function removeWhitespace($buffer)
 
     @include('components.includes.footer')
     
-    {{-- <!-- Messenger Plugin chat Code -->
-    <div id="fb-root"></div>
-
-    <!-- Your Plugin chat code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div> --}}
 
     <!-- phone call button  -->
     <a href="tel:0905439895">
@@ -55,32 +50,19 @@ function removeWhitespace($buffer)
         </button>
     </a>
 
-    {{-- <script>
-        var chatbox = document.getElementById('fb-customer-chat');
-        chatbox.setAttribute("page_id", "1791899111092295");
-        chatbox.setAttribute("attribution", "biz_inbox");
-      </script>
-  
-      <!-- Your SDK code -->
-      <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            xfbml            : true,
-            version          : 'v16.0'
-          });
-        };
-  
-        (function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-      </script> --}}
+    <!-- chat zalo -->
+    <div class='zalome'><a href='https://zalo.me/0905439895' target='_blank'>
+        <img alt='icon zalo' src="{{ asset('/images/img-zalo.png') }}"/>
+    </a></div>
 
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v16.0" nonce="ddMh2paa"></script>
+    <!-- start chat messenger  -->
+
+   <a href="https://m.me/421201775095904" target="_blank">
+        <img class="icon-messenger" alt="icon-mess" src="{{ asset('/images/icon-messenger.svg') }}" />
+    </a>
+
+    
+    <!-- <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v16.0" nonce="ddMh2paa"></script> -->
 
     <!-- Google analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1PCTP4E9WC"></script>
